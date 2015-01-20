@@ -119,6 +119,10 @@ a:focus {
 	border-color: transparent;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+background-color: #fff;
+}
+
 .dropdown-menu {
 	background: $color-secondary;
 }
