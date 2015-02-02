@@ -17,5 +17,8 @@
         <li {% if page.title == "Contact" %}class="active"{% endif %}><a href="{{"/contact/" | prepend: site.baseurl }}">CONTACT</a></li>
       </ul>
     </div><!--/.nav-collapse -->
+    <div id="logo" {% if page.url == "/" %}class="larger"{% endif %}>
+        <img src="{{ "/assets/img/cargonauts-logo.png" | prepend: site.baseurl }}" class="img-responsive">
+    </div><!-- /logo -->
   </div>
 </div>
