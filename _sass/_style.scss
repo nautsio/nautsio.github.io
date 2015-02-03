@@ -209,7 +209,7 @@ background-color: #fff;
 
 #headerwrap {
 	background-color: $color-primary;
-	padding-top: 160px;
+	padding-top: 100px;
 	padding-bottom: 40px;
 	text-align: center;
 }
@@ -499,21 +499,8 @@ a.anchor{
 }
 
 #logo {
-	width: 340px;
-	top: 5px;
-	left: 0;
-	margin-left: 0;
-   	position: relative;
-   	transition: all 1s;
-  	-moz-transition: all 1s; /* Firefox 4 */
-  	-webkit-transition: all 1s; /* Safari and Chrome */
-  	-o-transition: all 1s; /* Opera */
+	width: 254px;
+	margin-top: 10px;
+	float: left;
 }
 
-#logo.larger {
-	width: 750px;
-	top: 60px;
-	left: 50%;
-   	margin: auto;
-   	margin-left: -375px;
-}
