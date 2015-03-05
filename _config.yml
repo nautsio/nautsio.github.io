@@ -1,0 +1,96 @@
+url: http://cargonauts.io
+
+# Site settings
+title: Cargonauts
+tagline: We are datacenter automation experts!
+email: info@cargonauts.io 
+description: "Cargonauts are experts in Datacenter Automation. We are experienced infrastructure engineers with a focus on containerization."
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: fed136
+  secondary: fec503  
+  secondary-dark: 333
+  blue: 00b3fe
+
+# Team names, titles and social links
+people:
+- name: Bas Tichelaar 
+  pic: 1
+  tagline: Entreprenerd
+  social:
+    - title: twitter
+      url: https://twitter.com/bastichelaar
+    - title: github
+      url: http://github.com/bastichelaar
+    - title: linkedin 
+      url: http://nl.linkedin.com/in/bastichelaar 
+
+- name: Simon van der Veldt 
+  pic: 2
+  tagline: Hard- and software tinkerer
+  social:
+    - title: github
+      url: http://github.com/simonvanderveldt
+    - title: linkedin
+      url: https://nl.linkedin.com/in/simonvanderveldt
+
+- name: Ade Mochtar 
+  pic: 3
+  tagline: Cloud Engineer
+  social:
+    - title: github
+      url: http://github.com/amochtar
+
+- name: Richard Woudenberg 
+  pic: 4 
+  tagline: Troublemaker
+  social:
+    - title: linkedin
+      url: https://nl.linkedin.com/in/richardwoudenberg  
+    - title: github
+      url: http://github.com/rchrd
+
+- name: Armin Coralic 
+  pic: 5 
+  tagline: Full Stack Developer
+  social:
+    - title: linkedin
+      url: https://nl.linkedin.com/in/armincoralic 
+    - title: github
+      url: http://github.com/acoralic
+
+- name: Roy Bos 
+  pic: 6 
+  tagline: Full Stack Developer 
+  social:
+    - title: linkedin
+      url: https://nl.linkedin.com/in/roybos 
+    - title: github
+      url: http://github.com/roybos
+
+
+- name: Martin van Steenis 
+  pic: 7
+  tagline: Firestarter 
+  social:
+    - title: linkedin
+      url: https://nl.linkedin.com/in/martinvansteenis
+
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/cargonauts
+  - title: github
+    url: http://github.com/cargonauts
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: Utrechtseweg 49
+  - line: 1213 TL  
+  - line: The Netherlands
+
+# Build settings
+markdown: kramdown
+permalink: pretty

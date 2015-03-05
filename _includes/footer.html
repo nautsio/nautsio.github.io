@@ -1,0 +1,20 @@
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; {{ site.title }} 2015</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        {% for network in site.social %}
+                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-md-4">
+									<a href="http://www.xebia.com" style="color: #69235E; line-height: 40px">Powered by<div style="display: inline-block; vertical-align: middle; padding: 8px;"><img src="/img/xebia_logo_small.png" class="img-responsive inline-block"></div></a>
+                </div>
+            </div>
+        </div>
+    </footer>
