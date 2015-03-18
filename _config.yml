@@ -91,6 +91,16 @@ people:
     - title: linkedin
       url: https://nl.linkedin.com/in/martinvansteenis
 
+- name: Fai Fung
+  pic: 9
+  tagline: DevOps Advocate
+  social:
+    - title: linkedin
+      url: https://nl.linkedin.com/in/faifung
+    - title: github
+      url: https://github.com/ffung
+    - title: twitter
+      url: https://twitter.com/fai_fung
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
