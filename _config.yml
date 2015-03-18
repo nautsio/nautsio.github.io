@@ -51,8 +51,22 @@ people:
     - title: github
       url: http://github.com/rchrd
 
+
+- name: Benny Cornelissen
+  pic: 5
+  tagline: Infrastructure Hacker
+  social: 
+    - title: linkedin
+      url: https://nl.linkedin.com/in/bennycornelissen
+    - title: twitter
+      url: https://twitter.com/whieee
+    - title: bitbucket
+      url: https://bitbucket.org/bcornelissen
+    - title: github
+      url: http://github.com/bennycornelissen
+    
 - name: Armin Coralic 
-  pic: 5 
+  pic: 6 
   tagline: Dockerizer
   social:
     - title: linkedin
@@ -61,7 +75,7 @@ people:
       url: http://github.com/acoralic
 
 - name: Roy Bos 
-  pic: 6 
+  pic: 7 
   tagline: Full Stack Developer 
   social:
     - title: linkedin
@@ -71,7 +85,7 @@ people:
 
 
 - name: Martin van Steenis 
-  pic: 7
+  pic: 8
   tagline: Firestarter 
   social:
     - title: linkedin
