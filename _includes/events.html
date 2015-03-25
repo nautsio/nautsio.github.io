@@ -10,16 +10,17 @@
             <div class="row">
             {% for post in site.posts limit:4 %}
 							{% if post.categories contains 'events' %}
-                <div class="col-md-6 col-sm-6">
+                {% if post.youtube %}
+                  <div class="col-lg-8">
+                    <iframe width="560" height="315" src="{{ post.youtube }}" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                {% endif %}
+
+                <div class="col-lg-8">
                         <h4>{{ post.title }}</h4>
                         <p class="text-muted">{{ post.excerpt }}</p>
                 </div>
 							{% endif %}
-              {% if post.youtube %}
-                <div class="col-md-6 col-sm-6">
-                  <iframe width="560" height="315" src="{{ post.youtube }}" frameborder="0" allowfullscreen></iframe>
-                </div>
-              {% endif %}
             {% endfor %}
             </div>
         </div>
