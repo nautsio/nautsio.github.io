@@ -11,7 +11,7 @@
             {% for post in site.posts limit:4 %}
 							{% if post.categories contains 'events' %}
                 {% if post.youtube %}
-                  <div class="col-lg-12 text-center">
+                  <div class="row text-center">
                     <div class="videoWrapper">
                     <iframe src="{{ post.youtube }}" frameborder="0" allowfullscreen></iframe>
                     </div>
