@@ -1,2 +1,4 @@
 {% include css/bootstrap.min.css %}
 {% include css/agency.css %}
+{% include css/videowrapper.css %}
+{% include css/colfix.css %}
