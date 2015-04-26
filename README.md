@@ -18,10 +18,10 @@ Also be sure to run the occasional
 
 ##### Building
 
-    jekyll build
+    bundle exec jekyll build
 
 ##### Serving
 
-    jekyll serve
+    bundle exec jekyll serve
 
 For more information, see the [github-pages documentation](https://help.github.com/articles/using-jekyll-with-pages/)
