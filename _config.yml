@@ -46,43 +46,41 @@ people:
   pic: 4 
   tagline: Troublemaker
   social:
-    - title: linkedin
-      url: https://nl.linkedin.com/in/richardwoudenberg  
     - title: github
       url: http://github.com/rchrd
-
+    - title: linkedin
+      url: https://nl.linkedin.com/in/richardwoudenberg
 
 - name: Benny Cornelissen
   pic: 5
   tagline: Infrastructure Hacker
   social: 
-    - title: linkedin
-      url: https://nl.linkedin.com/in/bennycornelissen
     - title: twitter
       url: https://twitter.com/whieee
-    - title: bitbucket
-      url: https://bitbucket.org/bcornelissen
     - title: github
       url: http://github.com/bennycornelissen
-    
+    - title: bitbucket
+      url: https://bitbucket.org/bcornelissen
+    - title: linkedin
+      url: https://nl.linkedin.com/in/bennycornelissen
+
 - name: Armin Coralic 
   pic: 6 
   tagline: Dockerizer
   social:
-    - title: linkedin
-      url: https://nl.linkedin.com/in/armincoralic 
     - title: github
       url: http://github.com/acoralic
+    - title: linkedin
+      url: https://nl.linkedin.com/in/armincoralic
 
 - name: Roy Bos 
   pic: 7 
   tagline: Full Stack Developer 
   social:
-    - title: linkedin
-      url: https://nl.linkedin.com/in/roybos 
     - title: github
       url: http://github.com/roybos
-
+    - title: linkedin
+      url: https://nl.linkedin.com/in/roybos
 
 - name: Martin van Steenis 
   pic: 8
@@ -95,12 +93,12 @@ people:
   pic: 9
   tagline: DevOps Advocate
   social:
-    - title: linkedin
-      url: https://nl.linkedin.com/in/faifung
-    - title: github
-      url: https://github.com/ffung
     - title: twitter
       url: https://twitter.com/fai_fung
+    - title: github
+      url: https://github.com/ffung
+    - title: linkedin
+      url: https://nl.linkedin.com/in/faifung
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
