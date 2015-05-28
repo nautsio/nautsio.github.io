@@ -109,6 +109,13 @@ people:
     - title: linkedin
       url: https://nl.linkedin.com/in/sebastiaanvansteenis
 
+- name: You?
+  pic: 11
+  tagline: Datacenter Automation Hero
+  social:
+    - title: question-circle
+      url: https://xebia.com/careers/datacenter-automation-hero
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
