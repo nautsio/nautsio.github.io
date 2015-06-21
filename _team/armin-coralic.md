@@ -1,6 +1,6 @@
 ---
-name: Armin Coralic 
-pic: 6 
+name: Armin Čoralić
+pic: 6
 tagline: Dockerizer
 social:
     - title: github

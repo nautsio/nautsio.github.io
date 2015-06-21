@@ -1,5 +1,5 @@
 ---
-name: Ade Mochtar 
+name: Adé Mochtar
 pic: 3
 tagline: Cloud Engineer
 social:
