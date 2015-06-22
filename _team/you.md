@@ -1,6 +1,6 @@
 ---
 name: You?
-pic: 11
+pic: 99
 profile_url: https://xebia.com/careers/datacenter-automation-hero
 tagline: Data Center Automation Wizard
 social:
