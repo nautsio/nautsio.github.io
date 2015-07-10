@@ -1,5 +1,4 @@
 ---
-category: expertise
 ---
 ## Containers
 
