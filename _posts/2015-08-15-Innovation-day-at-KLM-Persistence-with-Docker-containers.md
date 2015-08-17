@@ -6,4 +6,4 @@ title: "Innovation Day At KLM: Persistence With Docker Containers"
 ---
 On 3th of July KLM and Cargonauts joined forces at KLM headquarters for an innovation day. The goal was to share knowledge and find out how to properly do “Persistence with Docker containers”.
 <p>
-Read how we together with KLM dove in to GlusterFS, Flocker and what we encountered while trying to build a solution for persistence of data.
+Learn what we encountered, while we dove into GlusterFS and Flocker, trying to solve data persistence.
