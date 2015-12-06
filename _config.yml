@@ -1,9 +1,9 @@
-url: http://cargonauts.io
+url: http://nauts.io
 
 # Site settings
 title: Nauts
 tagline: The data center automation experts!
-email: info@cargonauts.io
+email: info@nauts.io
 description: "Nauts are experts in Datacenter Automation. We are experienced infrastructure engineers with a focus on containerization."
 
 # Color settings (hex-codes without the leading hash-tag)
@@ -21,9 +21,9 @@ collections:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/cargonauts
+    url: http://twitter.com/nautsio
   - title: github
-    url: http://github.com/cargonauts
+    url: http://github.com/nautsio
 
 # Postal address (add as many lines as necessary)
 address:
