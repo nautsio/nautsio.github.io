@@ -29,7 +29,7 @@ pre[class*="language-"] {
 	background-size: 1em 1em;
 }
 
-code[class*="language-"] {
+pre[class*="language-"] code {
 	color: #F8F8F8;
 }
 

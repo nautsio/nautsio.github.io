@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<article>
+  <ul class="categories">
+    <li class=""><a href="#" title="Related Articles"><i class="fa fa-newspaper-o fa-fw"></i> 4</a></li>
+    <li class=""><a href="#" title="Related Links"><i class="fa fa-globe fa-fw"></i> 5</a></li>
+    <li class=""><a href="#" title="Related Pictures"><i class="fa fa-camera fa-fw"></i> 2</a></li>
+    <li class=""><a href="#" title="Related Code"><i class="fa fa-code fa-fw"></i> 1</a></li>
+    <li class=""><a href="#" title="Related Trainings"><i class="fa fa-mortar-board fa-fw"></i> 2</a></li>
+    <li class=""><a href="#" title="Related Events"><i class="fa fa-calendar fa-fw"></i> 1</a></li>
+    <li class=""><a href="#" title="Related Locations"><i class="fa fa-map fa-fw"></i> 1</a></li>
+    <li class=""><a href="#" title="Related Tweets"><i class="fa fa-twitter fa-fw"></i> 25</a></li>
+
+    <!-- Unused "Related content" links.
+    <li class=""><a href="#" title="Related Videos"><i class="fa fa-film fa-fw"></i> 12</a></li>
+    <li class=""><a href="#" title="Related Downloads"><i class="fa fa-cloud-download fa-fw"></i> 12</a></li>
+    <li class=""><a href="#" title="Related Containers"><i class="fa fa-cube fa-fw"></i> 4</a></li>
+    <li class=""><a href="#" title="Related Audio"><i class="fa fa-music fa-fw"></i> 4</a></li>
+    -->
+  </ul>
+  <h2>{{ page.title }}</h2>
+  <div class="details">
+    By {{ page.author }} on {{ page.date | date: "%B %-d, %Y" }}
+  </div>
+  {{ content }}
+  <ul class="tags">
+    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Docker</a></li>
+    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Consul</a></li>
+    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Hashicorp</a></li>
+    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Nomad</a></li>
+    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Hashiconf</a></li>
+    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Workshop</a></li>
+    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Event</a></li>
+  </ul>
+  <ul class="social">
+    <li><a href="#"><i class="fa fa-envelope fa-fw"></i></a></li>
+    <li class="facebook"><a href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+    <li class="twitter"><a href="#"><i class="fa fa-twitter fa-fw"></i></a></li>
+    <li class="linkedin"><a href="#"><i class="fa fa-linkedin fa-fw"></i></a></li>
+    <li class="google"><a href="#"><i class="fa fa-google fa-fw"></i></a></li>
+  </ul>
+</article>

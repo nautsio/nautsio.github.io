@@ -8,4 +8,6 @@ description: "Nauts are experts in Datacenter Automation. We are experienced inf
 
 # Build settings
 markdown: kramdown
+kramdown:
+    input: GFM
 permalink: pretty

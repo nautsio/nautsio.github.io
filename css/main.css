@@ -15,7 +15,8 @@ html, body {
 }
 
 #background {
-  background: #2895F1 url(https://iroller.io/content/images/2015/09/IMG_2373.JPG) center center;
+  background: #2895F1;
+  background-position: center center;
   background-size: cover;
   height: 40vh;
   position: absolute;
@@ -57,17 +58,19 @@ header nav a {
 
 main {
   width: 100%;
-  margin: 150px 50px 50px 50px;
+  margin: 150px 0 0 0;
 }
 
 article {
+  position: relative;
   background-color: #F8F8F8;
   display: block;
   margin: 0 auto;
   min-height: 400px;
   padding: 5px 0 0 0;
   text-align: left;
-  width: 960px;
+  max-width: 960px;
+  /*min-width: 800px;*/
 }
 
 article ul.categories {
@@ -97,9 +100,10 @@ article ul.social {
 
 article ul.social li {
   display: inline-block;
-  background: #A9A9A9;
+  width: 20px;
+  background: #2895F1;
   border-radius: 15px;
-  padding: 5px 12px;
+  padding: 5px;
   margin: 0 10px 10px 0;
 }
 
@@ -153,7 +157,14 @@ article h2 {
   text-transform: uppercase;
 }
 
-article p.intro {
+article .details {
+  margin: 20px 80px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  word-spacing: 1px;
+}
+
+article .details + p {
   color: #555555;
   font-size: 24px;
   line-height: 32px;
@@ -172,43 +183,26 @@ article p a {
   color: #2895F1;
 }
 
-article blockquote {
-  font-size: 20px;
-  line-height: 26px;
-  margin: 40px 20px;
-  color: #555555;
-}
-
-article blockquote::before {
-  font-weight: bold;
-  color: #999999;
-  content: "“";
-}
-
-article blockquote::after {
-  font-weight: bold;
-  color: #999999;
-  content: "”";
-}
-
-article blockquote + cite {
-  font-style: normal;
-  margin: -20px 20px 50px 20px;
+article blockquote p {
+  margin: 20px;
   display: block;
-  color: #999999;
-}
-
-
-article blockquote + cite::before {
-  margin: 0 10px 0 5px;
   color: #2895F1;
-  content: "—"
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 40px;
+  font-style: italic;
 }
 
 article img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-  object-fit: cover;
-  -o-object-fit: cover;
+  object-fit: scale-down;
+  width: 100%;
+  margin: 10px 0;
+}
+
+article pre {
+  width: 100%;
+}
+
+article code {
+  width: 100%;
 }

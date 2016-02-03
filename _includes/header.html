@@ -1,9 +1,13 @@
 <header>
   <h1>Nauts</h1>
   <nav>
-    <a href="#">Blog</a>
+    <a href="{{ "/" | prepend: site.baseurl }}">Blog</a>
+    {% for page in site.pages %}
+      {% if page.title %}<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+    {% endfor %}
+    <!-- <a href="#">Blog</a>
     <a href="#">Sharing</a>
     <a href="#">Events</a>
-    <a href="#">Contact</a>
+    <a href="#">Contact</a> -->
   </nav>
 </header>

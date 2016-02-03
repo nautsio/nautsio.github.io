@@ -1,112 +1,15 @@
 ---
 layout: default
 ---
-<article>
-  <ul class="categories">
-    <li class=""><a href="#" title="Related Articles"><i class="fa fa-newspaper-o fa-fw"></i> 4</a></li>
-    <li class=""><a href="#" title="Related Links"><i class="fa fa-globe fa-fw"></i> 5</a></li>
-    <li class=""><a href="#" title="Related Pictures"><i class="fa fa-camera fa-fw"></i> 2</a></li>
-    <li class=""><a href="#" title="Related Code"><i class="fa fa-code fa-fw"></i> 1</a></li>
-    <li class=""><a href="#" title="Related Trainings"><i class="fa fa-mortar-board fa-fw"></i> 2</a></li>
-    <li class=""><a href="#" title="Related Events"><i class="fa fa-calendar fa-fw"></i> 1</a></li>
-    <li class=""><a href="#" title="Related Locations"><i class="fa fa-map fa-fw"></i> 1</a></li>
-    <li class=""><a href="#" title="Related Tweets"><i class="fa fa-twitter fa-fw"></i> 25</a></li>
+{% for post in site.posts %}
+  <article class="post">
 
-    <!-- Unused "Related content" links.
-    <li class=""><a href="#" title="Related Videos"><i class="fa fa-film fa-fw"></i> 12</a></li>
-    <li class=""><a href="#" title="Related Downloads"><i class="fa fa-cloud-download fa-fw"></i> 12</a></li>
-    <li class=""><a href="#" title="Related Containers"><i class="fa fa-cube fa-fw"></i> 4</a></li>
-    <li class=""><a href="#" title="Related Audio"><i class="fa fa-music fa-fw"></i> 4</a></li>
-    -->
-  </ul>
-  <h2>Scheduling containers and more with Nomad</h2>
-  <p class="details">
-    By Erik Veld on December 27th, 2015
-  </p>
-  <p class="intro">
-    Specifically for the <a href="#">Dutch Docker Day</a> on the 20th of November, <a href="#">HashiCorp</a> released version 0.2.0 of <a href="#">Nomad</a> which has some awesome features such as service discovery by integrating with Consul, the system scheduler and restart policies.  HashiCorp worked hard to release version 0.2.0 on 18th of November and we pushed ourselves to release a self-paced, hands-on workshop. If you would like to explore and play with these latest features of Nomad, go check out the workshop over at <a href="#">http://workshops.nauts.io</a>.
-  </p>
-  <p>
-    Last friday, November the 20th, was the first edition of the Dutch Docker Day where I helped prepare a workshop about "scheduling containers and more with Nomad". It was a great experience where attendees got to play with the new features included in 0.2.0, which nearly didn't make it into the workshop.
-  </p>
-  <p>
-    When HashiCorp released Nomad during their <a href="#">HashiConf</a> event at the end of September, I was really excited as they always produce high quality tools with great user experience. As soon as the binary was available I downloaded it and tried to set up a cluster to see how it compared to some of it's competitors. The first release already had a lot of potential but also a lot of problems. For instance: when a container failed, Nomad would report it dead, but take no action; restart policies were still but a dream.
-  </p>
-  <img src="https://iroller.io/content/images/2015/09/IMG_2373.JPG" />
-  <p>
-    There were a lot of awesome features in store for the future of Nomad: integration with <a href="#">Consul</a>, system jobs, batch jobs, restart policies, etc. Imagine all possible integrations with other HashiCorp tools! I was sold. So when I was asked to prepare a workshop for the Dutch Docker Day I jumped at the opportunity to get better acquainted with Nomad. The idea was that the attendees of the workshop, since it was a pretty new product and had some quirks, would go on an explorative journey into the far reaches of the scheduler and together find it's treasures and dark secrets.
-  </p>
-  <q>We were told that there would be a new version released before the Dutch Docker Day but nothing appeared, until the day before the event.</q>
-  <p>
-    Time went by and the workshop was taking shape nicely. We have a nice setup with a cluster of machines that automatically bootstrap the Nomad cluster and set up it's basic configuration. We were told that there would be a new version released before the Dutch Docker Day but nothing appeared, until the day before the event. I was both excited and terrified! The HashiCorp team worked long hours to get the new release of Nomad done in time for the Dutch Docker Day so <a href="#">Armon Dadgar</a>, the CTO of HashiCorp and original creator of Nomad, could present the new features during his talk. This of course is a great thing, except for the fact that the workshop was entirely aimed at 0.1.2 and we had none of these new features incorporated into our Vagrant box. Were we going to throw all our work overboard and just start over, the night before the event?
-  </p>
-  <blockquote>
-    Immediately following the initial release of Nomad 0.1, we knew we wanted to get Nomad 0.2 and all its enhancements into the hands of our users by Dutch Docker Day. The team put in a huge effort over the course of a month and a half to get all the new features done and to a polish people expect of HashiCorp products. Leading up to the release we ran into one crazy bug after another (surprisingly all related to serialization). After intense debugging we got it to the fit and polish we wanted the night before at 3 AM! Once the website docs were updated and the blog post written, we released Nomad 0.2. The experience was very exciting but also exhausting! We are very happy with how it turned out and hope the users are too!
-  </blockquote>
-  <cite>Alex Dadgar, HashiCorp Engineer working on Nomad</cite>
-  <p>
-    It took until late in the evening to get an updated <a href="#">Vagrant box</a> with a bootstrapped Consul cluster and the new Nomad version, in order to showcase the auto discovery feature and Consul integration that 0.2.0 added. However, the slides for the workshop were still referencing the problems we encountered when trying out the 0.1.0 and 0.1.2 release, so all the slides and statements we had made about things not working or being released in the future had to be aligned with the fixes and improvements that came with the new release. After some hours of hectic editing during the morning of the event, the slides were finally updated and showcased all the glorious new features!
-  </p>
-  <img src="https://iroller.io/content/images/2015/09/IMG_2374.JPG" />
-  <p>
-    The new features they added in this release and the amount of fixes and improvements is staggering. In order to discover services there is no longer a need for extra tools such as Registrator, and your services are now automatically registered and deregistered as soon as they are started and stopped (which I first thought was a bug, cause I wasn't used to Nomad actually restarting my dead containers). The system scheduler is another feature I've been missing in other schedulers for a while, as it makes it possible to easily schedule services (such as Consul or Sysdig) on all of the eligible nodes in the cluster.
-  </p>
-  <p>
-    If you would like to follow the self-paced workshop by yourself, you can find the slides, machines and scripts for the workshop at <a href="#">http://workshops.nauts.io</a> together with the other workshops of the event. Please let me know your experiences, so the workshop can be improved over time!
-  </p>
-  <pre>
-    <code class="language-go">
-//
-// Get details about a group in Active Directory.
-//
-func getGroup(c *cli.Context) {
-if len(c.Args()) < 1 {
-cli.ShowSubcommandHelp(c)
-os.Exit(1)
-}
+    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-groupID := c.Args()[0]
-credentials := readCredentials()
+    <div class="entry">
+      {{ post.excerpt }}
+    </div>
 
-address := fmt.Sprintf("https://graph.windows.net/%s/groups/%s?api-version=1.6",
-  credentials.Company, groupID)
-client := &http.Client{}
-req, err := http.NewRequest("GET", address, nil)
-req.Header.Add("Host", "graph.windows.net")
-req.Header.Add("Authorization", credentials.Token.AccessToken)
-req.Header.Add("Content-Type", "application/json")
-req.Close = true
-
-resp, err := client.Do(req)
-check(err)
-
-content, err := ioutil.ReadAll(resp.Body)
-check(err)
-
-fmt.Println(string(content))
-}
-    </code>
-  </pre>
-  <p>
-    I would like to thank the HashiCorp team for their amazing work on the 0.2.0 release, the speed at which they have added so many great new features and improved the stability is incredible.
-  </p>
-  <p>
-    It was a lot of fun preparing the workshop for the Dutch Docker Day. Working with bleeding edge technologies is always a great way to really get to know it's inner workings and quirks, and I would recommend it to anyone, just be prepared to do some last-minute work ; )
-  </p>
-  <ul class="tags">
-    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Docker</a></li>
-    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Consul</a></li>
-    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Hashicorp</a></li>
-    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Nomad</a></li>
-    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Hashiconf</a></li>
-    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Workshop</a></li>
-    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Event</a></li>
-  </ul>
-  <ul class="social">
-    <li><a href="#"><i class="fa fa-envelope fa-fw"></i></a></li>
-    <li class="facebook"><a href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
-    <li class="twitter"><a href="#"><i class="fa fa-twitter fa-fw"></i></a></li>
-    <li class="linkedin"><a href="#"><i class="fa fa-linkedin fa-fw"></i></a></li>
-    <li class="google"><a href="#"><i class="fa fa-google fa-fw"></i></a></li>
-  </ul>
-</article>
+    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+  </article>
+{% endfor %}
