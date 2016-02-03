@@ -1,0 +1,11 @@
+url: https://nauts.io
+
+# Site settings
+title: Nauts
+tagline: The data center automation experts!
+email: info@nauts.io
+description: "Nauts are experts in Datacenter Automation. We are experienced infrastructure engineers with a focus on containerization."
+
+# Build settings
+markdown: kramdown
+permalink: pretty
