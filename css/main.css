@@ -1,0 +1,214 @@
+html {
+  background-color: #F8F8F8;
+  color: #333333;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+html, body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+#background {
+  background: #2895F1 url(https://iroller.io/content/images/2015/09/IMG_2373.JPG) center center;
+  background-size: cover;
+  height: 40vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  left: 5%;
+  padding: 20px 0;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  width: 90%;
+}
+
+header h1 {
+  color: #FFFFFF;
+  font-family: "Monserrat", "Helvetica Neue", Arial, sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+header nav {
+  flex: 1 90%;
+  text-align: right;
+}
+
+header nav a {
+  color: #FFFFFF;
+  line-height: 32px;
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  margin: 150px 50px 50px 50px;
+}
+
+article {
+  background-color: #F8F8F8;
+  display: block;
+  margin: 0 auto;
+  min-height: 400px;
+  padding: 5px 0 0 0;
+  text-align: left;
+  width: 960px;
+}
+
+article ul.categories {
+  list-style: none;
+  margin: 40px 80px 20px 80px;
+  padding: 0;
+}
+
+article ul.categories li {
+  display: inline-block;
+  border-radius: 15px;
+  padding: 5px 12px;
+  margin: 0 10px 10px 0;
+  background: #2895F1;
+}
+
+article ul.categories li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+article ul.social {
+  list-style: none;
+  margin: 40px 80px 20px 80px;
+  padding: 0;
+}
+
+article ul.social li {
+  display: inline-block;
+  background: #A9A9A9;
+  border-radius: 15px;
+  padding: 5px 12px;
+  margin: 0 10px 10px 0;
+}
+
+article ul.social li.google {
+  background-color: #DA4835;
+}
+
+article ul.social li.facebook {
+  background-color: #3E549D;
+}
+
+article ul.social li.twitter {
+  background-color: #5EA9DD;
+}
+
+article ul.social li.linkedin {
+  background-color: #006699;
+}
+
+article ul.social li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+article ul.tags {
+  list-style: none;
+  margin: 40px 80px 20px 80px;
+  padding: 0;
+}
+
+article ul.tags li {
+  display: inline-block;
+  background: #A9A9A9;
+  border-radius: 15px;
+  padding: 5px 12px;
+  margin: 0 10px 10px 0;
+}
+
+article ul.tags li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+article h2 {
+  font-weight: bold;
+  font-family: "Monserrat", "Helvetica Neue", Arial, sans-serif;
+  font-size: 48px;
+  line-height: 52px;
+  margin: 20px 80px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+article p.intro {
+  color: #555555;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 20px 80px 40px 80px;
+}
+
+article p {
+  margin: 20px 80px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  word-spacing: 1px;
+}
+
+article p a {
+  text-decoration: none;
+  color: #2895F1;
+}
+
+article blockquote {
+  font-size: 20px;
+  line-height: 26px;
+  margin: 40px 20px;
+  color: #555555;
+}
+
+article blockquote::before {
+  font-weight: bold;
+  color: #999999;
+  content: "“";
+}
+
+article blockquote::after {
+  font-weight: bold;
+  color: #999999;
+  content: "”";
+}
+
+article blockquote + cite {
+  font-style: normal;
+  margin: -20px 20px 50px 20px;
+  display: block;
+  color: #999999;
+}
+
+
+article blockquote + cite::before {
+  margin: 0 10px 0 5px;
+  color: #2895F1;
+  content: "—"
+}
+
+article img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
