@@ -11,3 +11,16 @@ markdown: kramdown
 kramdown:
     input: GFM
 permalink: pretty
+
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
+paginate: 3
+paginate_path: "/page/:num/"
+
+#Disqus shortname
+disqus: nautsio
+#Enable when running locally
+disqus_developer: 1
