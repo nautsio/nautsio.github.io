@@ -35,14 +35,16 @@ header {
   width: 90%;
 }
 
-header h1 {
+header h1, header h1 a {
   color: #FFFFFF;
   font-family: "Monserrat", "Helvetica Neue", Arial, sans-serif;
   font-size: 32px;
   line-height: 32px;
   margin: 0;
   text-transform: uppercase;
+  text-decoration: none;
 }
+
 
 header nav {
   flex: 1 90%;
@@ -205,4 +207,26 @@ article pre {
 
 article code {
   width: 100%;
+}
+
+article .excerpt {
+  margin: 20px 80px;
+}
+
+#disqus_thread {
+  margin: 20px 80px;
+}
+
+article .small {
+  font-size: 0.9em;
+  margin: 20px 80px;
+}
+
+article .readmore, article .video {
+  margin: 20px 80px;
+}
+
+article h2 a {
+  color: #333333;
+  text-decoration: none;
 }

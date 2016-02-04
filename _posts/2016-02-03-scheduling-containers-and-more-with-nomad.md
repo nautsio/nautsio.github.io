@@ -3,6 +3,7 @@ layout: post
 title: Scheduling containers and more with Nomad
 author: Erik Veld
 date: 2016-02-03
+comments: true
 tags:
   - Docker
   - Consul
