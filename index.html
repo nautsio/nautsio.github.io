@@ -1,0 +1,57 @@
+---
+layout: default
+---
+{% for post in paginator.posts %}
+  <article class="post">
+    {% if post.externalurl %}
+      <h2><a href="{{ post.externalurl }}" target="_blank">{{ post.title }}</a></h2>
+    {% else %}
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    {% endif %}
+    <div class="small">
+      By {{ post.author }} - {{ post.date | date: "%B %-d, %Y" }} {% if post.comments == true %}- <a href="{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{ site.baseurl }}{{post.url}}"></a>{% endif %}
+    </div>
+
+    {% if post.youtube %}
+      <div class="video"><iframe src="{{ post.youtube }}" frameborder="0" allowfullscreen></iframe></div>
+    {% endif %}
+
+    <div class="entry">
+      {{ post.excerpt }}
+    </div>
+
+    <div class="readmore">
+    {% if post.externalurl %}
+      <a href="{{ post.externalurl }}" target="_blank" class="read-more">Read More</a>
+    {% else %}
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    {% endif %}
+    </div>
+  </article>
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}

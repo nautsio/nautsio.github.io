@@ -5,6 +5,7 @@ author: Erik Veld
 date: 2016-02-03
 categories:
   - article
+comments: true
 tags:
   - docker
   - consul
