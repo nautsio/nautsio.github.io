@@ -25,13 +25,9 @@ layout: default
   </div>
   {{ content }}
   <ul class="tags">
-    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Docker</a></li>
-    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Consul</a></li>
-    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Hashicorp</a></li>
-    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Nomad</a></li>
-    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Hashiconf</a></li>
-    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Workshop</a></li>
-    <li class=""><a href="#"><i class="fa fa-tag fa-fw"></i> Event</a></li>
+  {% for tag in page.tags %}
+    <li><a href="#"><i class="fa fa-tag fa-fw"></i> {{ tag }}</a></li>
+  {% endfor %}
   </ul>
   <ul class="social">
     <li><a href="#"><i class="fa fa-envelope fa-fw"></i></a></li>
