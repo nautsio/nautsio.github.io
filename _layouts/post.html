@@ -26,7 +26,7 @@ layout: default
   {{ content }}
   <ul class="tags">
   {% for tag in page.tags %}
-    <li><a href="#"><i class="fa fa-tag fa-fw"></i> {{ tag }}</a></li>
+    <li><a href="/tags/#{{ tag }}-ref"><i class="fa fa-tag fa-fw"></i> {{ tag }}</a></li>
   {% endfor %}
   </ul>
   <ul class="social">

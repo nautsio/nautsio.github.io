@@ -5,13 +5,13 @@ author: Erik Veld
 date: 2016-02-03
 comments: true
 tags:
-  - Docker
-  - Consul
-  - Hashicorp
-  - Nomad
-  - Hashiconf
-  - Workshop
-  - Event
+  - docker
+  - consul
+  - hashicorp
+  - nomad
+  - hashiconf
+  - workshop
+  - event
 ---
 Specifically for the [Dutch Docker Day](http://www.google.com) on the 20th of November, [HashiCorp](http://www.google.com) released version 0.2.0 of [Nomad](http://www.google.com) which has some awesome features such as service discovery by integrating with Consul, the system scheduler and restart policies.  HashiCorp worked hard to release version 0.2.0 on 18th of November and we pushed ourselves to release a self-paced, hands-on workshop. If you would like to explore and play with these latest features of Nomad, go check out the workshop over at [http://workshops.nauts.io](http://workshops.nauts.io).
 
