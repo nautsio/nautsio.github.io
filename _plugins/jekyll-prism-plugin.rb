@@ -1,3 +1,6 @@
+# Changed the plugin a bit to make it work with our theme and make it easier for non-techies to use.
+# It now does not wrap the block in a div and uses the tag "code" instead of "prism".
+# - Erik
 module Jekyll
 
   class PrismBlock < Liquid::Block
@@ -36,4 +39,4 @@ module Jekyll
 
 end
 
-Liquid::Template.register_tag('prism', Jekyll::PrismBlock)
+Liquid::Template.register_tag('code', Jekyll::PrismBlock)

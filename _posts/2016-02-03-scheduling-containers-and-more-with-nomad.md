@@ -3,14 +3,21 @@ layout: post
 title: Scheduling containers and more with Nomad
 author: Erik Veld
 date: 2016-02-03
+categories:
+  - article
 tags:
-  - Docker
-  - Consul
-  - Hashicorp
-  - Nomad
-  - Hashiconf
-  - Workshop
-  - Event
+  - docker
+  - consul
+  - hashicorp
+  - nomad
+  - hashiconf
+  - workshop
+  - event
+related:
+  articles:
+    - http://www.google.com
+  videos:
+    - http://www.youtube.com
 ---
 Specifically for the [Dutch Docker Day](http://www.google.com) on the 20th of November, [HashiCorp](http://www.google.com) released version 0.2.0 of [Nomad](http://www.google.com) which has some awesome features such as service discovery by integrating with Consul, the system scheduler and restart policies.  HashiCorp worked hard to release version 0.2.0 on 18th of November and we pushed ourselves to release a self-paced, hands-on workshop. If you would like to explore and play with these latest features of Nomad, go check out the workshop over at [http://workshops.nauts.io](http://workshops.nauts.io).
 
@@ -24,7 +31,7 @@ There were a lot of awesome features in store for the future of Nomad: integrati
 
 > We were told that there would be a new version released before the Dutch Docker Day but nothing appeared, until the day before the event.
 
-Time went by and the workshop was taking shape nicely. We have a nice setup with a cluster of machines that automatically bootstrap the Nomad cluster and set up it's basic configuration. We were told that there would be a new version released before the Dutch Docker Day but nothing appeared, until the day before the event. I was both excited and terrified! The HashiCorp team worked long hours to get the new release of Nomad done in time for the Dutch Docker Day so <a href="#">Armon Dadgar</a>, the CTO of HashiCorp and original creator of Nomad, could present the new features during his talk. This of course is a great thing, except for the fact that the workshop was entirely aimed at 0.1.2 and we had none of these new features incorporated into our Vagrant box. Were we going to throw all our work overboard and just start over, the night before the event?
+Time went by and the workshop was taking shape nicely. We have a nice setup with a cluster of machines that automatically bootstrap the Nomad cluster and set up it's basic configuration. We were told that there would be a new version released before the Dutch Docker Day but nothing appeared, until the day before the event. I was both excited and terrified! The HashiCorp team worked long hours to get the new release of Nomad done in time for the Dutch Docker Day so [Armon Dadgar](http://www.google.com), the CTO of HashiCorp and original creator of Nomad, could present the new features during his talk. This of course is a great thing, except for the fact that the workshop was entirely aimed at 0.1.2 and we had none of these new features incorporated into our Vagrant box. Were we going to throw all our work overboard and just start over, the night before the event?
 
 It took until late in the evening to get an updated [Vagrant box](http://www.google.com) with a bootstrapped Consul cluster and the new Nomad version, in order to showcase the auto discovery feature and Consul integration that 0.2.0 added. However, the slides for the workshop were still referencing the problems we encountered when trying out the 0.1.0 and 0.1.2 release, so all the slides and statements we had made about things not working or being released in the future had to be aligned with the fixes and improvements that came with the new release. After some hours of hectic editing during the morning of the event, the slides were finally updated and showcased all the glorious new features!
 
@@ -34,7 +41,7 @@ The new features they added in this release and the amount of fixes and improvem
 
 If you would like to follow the self-paced workshop by yourself, you can find the slides, machines and scripts for the workshop at [http://workshops.nauts.io](http://www.google.com) together with the other workshops of the event. Please let me know your experiences, so the workshop can be improved over time!
 
-{% prism go %}
+{% code go %}
 //
 // Get details about a group in Active Directory.
 //
@@ -64,7 +71,7 @@ check(err)
 
 fmt.Println(string(content))
 }
-{% endprism %}
+{% endcode %}
 
 I would like to thank the HashiCorp team for their amazing work on the 0.2.0 release, the speed at which they have added so many great new features and improved the stability is incredible.
 

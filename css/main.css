@@ -70,7 +70,6 @@ article {
   padding: 5px 0 0 0;
   text-align: left;
   max-width: 960px;
-  /*min-width: 800px;*/
 }
 
 article ul.categories {
@@ -144,6 +143,7 @@ article ul.tags li {
 
 article ul.tags li a {
   text-decoration: none;
+  text-transform: capitalize;
   color: #FFFFFF;
 }
 
