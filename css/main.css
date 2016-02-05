@@ -209,6 +209,12 @@ article img {
   margin: 10px 0;
 }
 
+article iframe {
+  object-fit: scale-down;
+  width: 100%;
+  margin: 10px 0;
+}
+
 article pre {
   width: 100%;
 }
