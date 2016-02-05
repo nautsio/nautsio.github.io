@@ -158,7 +158,15 @@ article h2 {
   padding: 0;
   text-transform: uppercase;
 }
-
+article h3 {
+  font-weight: bold;
+  font-family: "Monserrat", "Helvetica Neue", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 35px;
+  margin: 20px 80px;
+  padding: 0;
+  text-transform: uppercase;
+}
 article .details {
   margin: 20px 80px;
   line-height: 24px;
@@ -229,4 +237,9 @@ article .readmore, article .video {
 article h2 a {
   color: #333333;
   text-decoration: none;
+}
+
+article.tags ul {
+  margin-left: 80px;
+  padding-left: 20px;
 }

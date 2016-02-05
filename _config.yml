@@ -24,3 +24,5 @@ paginate_path: "/page/:num/"
 disqus: nautsio
 #Enable when running locally
 disqus_developer: 1
+
+twitter_username: nautsio
