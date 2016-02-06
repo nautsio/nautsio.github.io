@@ -1,58 +1,95 @@
 ---
 layout: default
+background: #EFEFEF
+order: 1
 ---
-<h1>The datacenter automation experts</h1>
-{% for post in paginator.posts %}
-  <article class="post">
-    {% if post.externalurl %}
-      <h2><a href="{{ post.externalurl }}" target="_blank">{{ post.title }}</a></h2>
-    {% else %}
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-    {% endif %}
-    <div class="small">
-      By {{ post.author }} - {{ post.date | date: "%B %-d, %Y" }} {% if post.comments == true %}- <a href="{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{ site.baseurl }}{{post.url}}"></a>{% endif %}
-    </div>
-
-    {% if post.youtube %}
-      <div class="video"><iframe src="{{ post.youtube }}" frameborder="0" allowfullscreen></iframe></div>
-    {% endif %}
-
-    <div class="entry">
-      {{ post.excerpt }}
-    </div>
-
-    <div class="readmore">
-    {% if post.externalurl %}
-      <a href="{{ post.externalurl }}" target="_blank" class="read-more">Read More</a>
-    {% else %}
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    {% endif %}
-    </div>
-  </article>
-{% endfor %}
-
-{% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+<div id="background"></div>
+<main id="index">
+  {% if paginator.page == 1 %}
+    {% for post in paginator.posts limit:1 %}
+    <article class="large">
+      {% include large_post.html %}
+    </article>
+    {% endfor %}
+    {% for post in paginator.posts offset:1 limit:6 %}
+    <article class="small">
+      {% include small_post.html %}
+    </article>
+    {% endfor %}
   {% else %}
-    <span>&laquo; Prev</span>
+    {% for post in paginator.posts limit:7 %}
+    <article class="small">
+      {% include small_post.html %}
+    </article>
+    {% endfor %}
   {% endif %}
 
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <em>{{ page }}</em>
-    {% elsif page == 1 %}
-      <a href="{{ site.baseurl }}/">{{ page }}</a>
+  {% if paginator.total_pages > 1 %}
+  <div id="pagination">
+    <ul>
+    {% if paginator.previous_page %}
+    <li class="prev">
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&lt;</a>
+    </li>
     {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    <li class="inactive prev">
+      <span>&lt;</span>
+    </li>
     {% endif %}
-  {% endfor %}
 
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-  {% else %}
-    <span>Next &raquo;</span>
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+      <li class="inactive">
+        <span>{{ page }}</span>
+      </li>
+      {% elsif page == 1 %}
+      <li>
+        <a href="{{ site.baseurl }}/">{{ page }}</a>
+      </li>
+      {% else %}
+      <li>
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+    <li class="next">
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&gt;</a>
+    </li>
+    {% else %}
+    <li class="inactive next">
+      <span>&gt;</span>
+    <li>
+    {% endif %}
+  </div>
   {% endif %}
-</div>
-{% endif %}
+
+      <!-- {% if post.externalurl %}
+        <h2><a href="{{ post.externalurl }}" target="_blank">{{ post.title }}</a></h2>
+      {% else %}
+        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      {% endif %}
+      <div class="small">
+        By {{ post.author }} - {{ post.date | date: "%B %-d, %Y" }} {% if post.comments == true %}- <a href="{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{ site.baseurl }}{{post.url}}"></a>{% endif %}
+      </div>
+
+      {% if post.youtube %}
+        <div class="video"><iframe src="{{ post.youtube }}" frameborder="0" allowfullscreen></iframe></div>
+      {% endif %}
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <div class="readmore">
+      {% if post.externalurl %}
+        <a href="{{ post.externalurl }}" target="_blank" class="read-more">Read More</a>
+      {% else %}
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      {% endif %}
+      </div>
+    </article>-->
+
+  <!--  -->
+</main>

@@ -1,6 +1,7 @@
 ---
 author: Bas Tichelaar
 tags: docker mesos consul
+cover: https://d13yacurqjgara.cloudfront.net/users/42318/screenshots/2270444/hashiconf-dribble-800x600.png
 difficulty: advanced
 externalurl: https://www.wehkamplabs.com/blog/2015/10/15/applying-consul-within-the-blaze-microservices-platform/
 ---

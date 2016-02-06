@@ -1,7 +1,8 @@
 ---
-title: "Event aftermovie: Mitchell Hashimoto - Automating the Modern Datacenter"
+title: "Automating the Modern Datacenter"
 author: Nauts
 tags: docker
+cover: http://www.highload.ru/uploads/e/18/ae4ece56431b608236340ee25ba4b.jpg
 difficulty: basic
 externalurl: https://www.youtube.com/watch?v=Yw_NoD9NDyk
 youtube: https://www.youtube.com/embed/Yw_NoD9NDyk

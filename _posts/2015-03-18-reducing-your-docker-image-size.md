@@ -1,6 +1,7 @@
 ---
 author: Richard Woudenberg
 tags: docker
+cover: http://www.cloudsoftcorp.com/wp-content/uploads/2015/06/Dockercon-Logo.png
 difficulty: basic
 externalurl: http://woudenberg.io/reducing-docker-image-size/
 ---

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Scheduling containers and more with Nomad
+title: "Scheduling containers and more with Nomad"
 author: Erik Veld
 date: 2016-02-03
+cover: https://d13yacurqjgara.cloudfront.net/users/2898/screenshots/2001298/mesosphere_dcos_-_services_grid.png
 categories:
   - article
 comments: true
@@ -55,30 +56,30 @@ If you would like to follow the self-paced workshop by yourself, you can find th
 // Get details about a group in Active Directory.
 //
 func getGroup(c *cli.Context) {
-if len(c.Args()) < 1 {
-cli.ShowSubcommandHelp(c)
-os.Exit(1)
-}
+  if len(c.Args()) < 1 {
+    cli.ShowSubcommandHelp(c)
+    os.Exit(1)
+  }
 
-groupID := c.Args()[0]
-credentials := readCredentials()
+  groupID := c.Args()[0]
+  credentials := readCredentials()
 
-address := fmt.Sprintf("https://graph.windows.net/%s/groups/%s?api-version=1.6",
-credentials.Company, groupID)
-client := &http.Client{}
-req, err := http.NewRequest("GET", address, nil)
-req.Header.Add("Host", "graph.windows.net")
-req.Header.Add("Authorization", credentials.Token.AccessToken)
-req.Header.Add("Content-Type", "application/json")
-req.Close = true
+  address := fmt.Sprintf("https://graph.windows.net/%s/groups/%s?api-version=1.6",
+    credentials.Company, groupID)
+  client := &http.Client{}
+  req, err := http.NewRequest("GET", address, nil)
+  req.Header.Add("Host", "graph.windows.net")
+  req.Header.Add("Authorization", credentials.Token.AccessToken)
+  req.Header.Add("Content-Type", "application/json")
+  req.Close = true
 
-resp, err := client.Do(req)
-check(err)
+  resp, err := client.Do(req)
+  check(err)
 
-content, err := ioutil.ReadAll(resp.Body)
-check(err)
+  content, err := ioutil.ReadAll(resp.Body)
+  check(err)
 
-fmt.Println(string(content))
+  fmt.Println(string(content))
 }
 {% endcode %}
 
