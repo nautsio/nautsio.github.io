@@ -104,6 +104,17 @@ main#index article.small {
   flex: 1 0 30%;
   margin: 15px 0;
   max-width: 31.5%;
+  min-width: 400px;
+}
+
+@media screen and (max-width: 1200px) {
+  main#index article.small {
+    min-width: 580px;
+  }
+
+  main#index article.small .post {
+    height: 220px;
+  }
 }
 
 main#index article.small .image {
@@ -118,7 +129,7 @@ main#index article.small .post {
   display: block;
   background-color: #F8F8F8;
   padding: 20px 25px;
-  height: 300px;
+  height: 275px;
 }
 
 main#index article .post h2 {
@@ -141,7 +152,10 @@ main#index article .post p.intro {
   line-height: 24px;
   letter-spacing: 0.2px;
   word-spacing: 1px;
-
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 main#index article .post p.intro a {
