@@ -7,7 +7,6 @@ html {
 }
 
 html, body {
-  display: flex;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -18,15 +17,15 @@ html, body {
   background: #2895F1;
   background-position: center center;
   background-size: cover;
-  height: 100vh;
+  height: 40vh;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: -1;
 }
 
-#background.post {
-  height: 40vh;
+#background.frontpage {
+  height: 100vh;
 }
 
 header {
@@ -401,4 +400,12 @@ main#post article pre, main#post article code {
 
 main#post #disqus_thread {
   margin: 0 80px;
+}
+
+/*
+  Footer.
+ */
+footer {
+  background: #222222;
+  height: 400px;
 }

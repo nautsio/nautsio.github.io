@@ -3,7 +3,11 @@ layout: default
 background: #EFEFEF
 order: 1
 ---
-<div id="background"></div>
+{% if paginator.page == 1 %}
+  <div id="background" class="frontpage"></div>
+{% else %}
+  <div id="background" class="archive"></div>
+{% endif %}
 <main id="index">
   {% if paginator.page == 1 %}
     {% for post in paginator.posts limit:1 %}
