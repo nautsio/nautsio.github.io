@@ -1,6 +1,5 @@
 html {
   background-color: #F8F8F8;
-  /*background-color: #EFEFEF;*/
   color: #333333;
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
@@ -104,17 +103,6 @@ main#index article.small {
   flex: 1 0 30%;
   margin: 15px 0;
   max-width: 31.5%;
-  min-width: 400px;
-}
-
-@media screen and (max-width: 1200px) {
-  main#index article.small {
-    min-width: 580px;
-  }
-
-  main#index article.small .post {
-    height: 220px;
-  }
 }
 
 main#index article.small .image {
@@ -130,6 +118,39 @@ main#index article.small .post {
   background-color: #F8F8F8;
   padding: 20px 25px;
   height: 275px;
+}
+
+/*
+  Handle mobile phones.
+ */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  main#index article.small {
+    flex: 1 0 50%;
+    max-width: 48.5%;
+  }
+
+  main#index article.small .post {
+    height: 220px;
+  }
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    main#index article.small {
+      flex: 1 0 100%;
+      max-width: 100%;
+    }
+
+    main#index article.small .post {
+      height: 170px;
+    }
 }
 
 main#index article .post h2 {
