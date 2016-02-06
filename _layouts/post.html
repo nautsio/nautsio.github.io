@@ -1,61 +1,59 @@
 ---
 layout: default
 ---
-<main class="post">
-  <article>
-    <ul class="categories">
-      <li class=""><a href="#" title="Related Articles"><i class="fa fa-newspaper-o fa-fw"></i> 4</a></li>
-      <li class=""><a href="#" title="Related Links"><i class="fa fa-globe fa-fw"></i> 5</a></li>
-      <li class=""><a href="#" title="Related Pictures"><i class="fa fa-camera fa-fw"></i> 2</a></li>
-      <li class=""><a href="#" title="Related Code"><i class="fa fa-code fa-fw"></i> 1</a></li>
-      <li class=""><a href="#" title="Related Trainings"><i class="fa fa-mortar-board fa-fw"></i> 2</a></li>
-      <li class=""><a href="#" title="Related Events"><i class="fa fa-calendar fa-fw"></i> 1</a></li>
-      <li class=""><a href="#" title="Related Locations"><i class="fa fa-map fa-fw"></i> 1</a></li>
-      <li class=""><a href="#" title="Related Tweets"><i class="fa fa-twitter fa-fw"></i> 25</a></li>
+<article>
+  <ul class="categories">
+    <li class=""><a href="#" title="Related Articles"><i class="fa fa-newspaper-o fa-fw"></i> 4</a></li>
+    <li class=""><a href="#" title="Related Links"><i class="fa fa-globe fa-fw"></i> 5</a></li>
+    <li class=""><a href="#" title="Related Pictures"><i class="fa fa-camera fa-fw"></i> 2</a></li>
+    <li class=""><a href="#" title="Related Code"><i class="fa fa-code fa-fw"></i> 1</a></li>
+    <li class=""><a href="#" title="Related Trainings"><i class="fa fa-mortar-board fa-fw"></i> 2</a></li>
+    <li class=""><a href="#" title="Related Events"><i class="fa fa-calendar fa-fw"></i> 1</a></li>
+    <li class=""><a href="#" title="Related Locations"><i class="fa fa-map fa-fw"></i> 1</a></li>
+    <li class=""><a href="#" title="Related Tweets"><i class="fa fa-twitter fa-fw"></i> 25</a></li>
 
-      <!-- Unused "Related content" links.
-      <li class=""><a href="#" title="Related Videos"><i class="fa fa-film fa-fw"></i> 12</a></li>
-      <li class=""><a href="#" title="Related Downloads"><i class="fa fa-cloud-download fa-fw"></i> 12</a></li>
-      <li class=""><a href="#" title="Related Containers"><i class="fa fa-cube fa-fw"></i> 4</a></li>
-      <li class=""><a href="#" title="Related Audio"><i class="fa fa-music fa-fw"></i> 4</a></li>
-      -->
-    </ul>
-    <h2>{{ page.title }}</h2>
-    <div class="details">
-      By {{ page.author }} on {{ page.date | date: "%B %-d, %Y" }}
-    </div>
-    {{ content }}
-    <ul class="tags">
-    {% for tag in page.tags %}
-      <li><a href="/tags/#{{ tag }}-ref"><i class="fa fa-tag fa-fw"></i> {{ tag }}</a></li>
-    {% endfor %}
-    </ul>
-    <ul class="social">
-      <li><a href="mailto:?to=&subject={{ page.title }}&body={{ site.baseurl }}{{ page.url }}"><i class="fa fa-envelope fa-fw"></i></a></li>
-      <li class="facebook"><a href="http://www.facebook.com/sharer.php?u={{ site.baseurl }}{{ page.url }}&p[title]={{ page.title }}"><i class="fa fa-facebook fa-fw"></i></a></li>
-      <li class="twitter"><a href="http://twitter.com/share?text={{ page.title }}&url={{ site.baseurl }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}"><i class="fa fa-twitter fa-fw"></i></a></li>
-      <li class="linkedin"><a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.baseurl }}{{ page.url }}&title={{ page.title }}&summary={{ page.excerpt | strip_html }}&source={{ site.baseurl }}"><i class="fa fa-linkedin fa-fw"></i></a></li>
-      <li class="google"><a href="https://plus.google.com/share?url={{ page.url | prepend: site.baseurl | escape}}"><i class="fa fa-google fa-fw"></i></a></li>
-    </ul>
-    {% if page.comments %}
-    <div id="disqus_thread"></div>
-        <script type="text/javascript">
-            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            var disqus_shortname = '{{ site.disqus }}'; // required: replace example with your forum shortname
-            {% if config.disqus_developer == 1 %}
-            var disqus_developer = 1; // Comment out when the site is live
-            {% endif %}
-            var disqus_identifier = "{{ site.baseurl }}{{ page.url }}";
+    <!-- Unused "Related content" links.
+    <li class=""><a href="#" title="Related Videos"><i class="fa fa-film fa-fw"></i> 12</a></li>
+    <li class=""><a href="#" title="Related Downloads"><i class="fa fa-cloud-download fa-fw"></i> 12</a></li>
+    <li class=""><a href="#" title="Related Containers"><i class="fa fa-cube fa-fw"></i> 4</a></li>
+    <li class=""><a href="#" title="Related Audio"><i class="fa fa-music fa-fw"></i> 4</a></li>
+    -->
+  </ul>
+  <h1>{{ page.title }}</h1>
+  <div class="details">
+    By {{ page.author }} on {{ page.date | date: "%B %-d, %Y" }}
+  </div>
+  {{ content }}
+  <ul class="tags">
+  {% for tag in page.tags %}
+    <li><a href="/tags/#{{ tag }}-ref"><i class="fa fa-tag fa-fw"></i> {{ tag }}</a></li>
+  {% endfor %}
+  </ul>
+  <ul class="social">
+    <li><a href="mailto:?to=&subject={{ page.title }}&body={{ site.baseurl }}{{ page.url }}"><i class="fa fa-envelope fa-fw"></i></a></li>
+    <li class="facebook"><a href="http://www.facebook.com/sharer.php?u={{ site.baseurl }}{{ page.url }}&p[title]={{ page.title }}"><i class="fa fa-facebook fa-fw"></i></a></li>
+    <li class="twitter"><a href="http://twitter.com/share?text={{ page.title }}&url={{ site.baseurl }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}"><i class="fa fa-twitter fa-fw"></i></a></li>
+    <li class="linkedin"><a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.baseurl }}{{ page.url }}&title={{ page.title }}&summary={{ page.excerpt | strip_html }}&source={{ site.baseurl }}"><i class="fa fa-linkedin fa-fw"></i></a></li>
+    <li class="google"><a href="https://plus.google.com/share?url={{ page.url | prepend: site.baseurl | escape}}"><i class="fa fa-google fa-fw"></i></a></li>
+  </ul>
+  {% if page.comments %}
+  <div id="disqus_thread"></div>
+      <script type="text/javascript">
+          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+          var disqus_shortname = '{{ site.disqus }}'; // required: replace example with your forum shortname
+          {% if config.disqus_developer == 1 %}
+          var disqus_developer = 1; // Comment out when the site is live
+          {% endif %}
+          var disqus_identifier = "{{ site.baseurl }}{{ page.url }}";
 
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    {% endif %}
-  </article>
-</main>
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  {% endif %}
+</article>

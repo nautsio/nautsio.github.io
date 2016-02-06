@@ -149,7 +149,7 @@ article ul.tags li a {
   color: #FFFFFF;
 }
 
-article h2 {
+article h1, article h2 {
   font-weight: bold;
   font-family: "Monserrat", "Helvetica Neue", Arial, sans-serif;
   font-size: 48px;
