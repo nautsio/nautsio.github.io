@@ -82,7 +82,7 @@ main#index {
 
 main#index article.large {
   flex: 1 100%;
-  margin-bottom: 30px;
+  margin: 15px 0;
 }
 
 main#index article.large .image {
