@@ -17,7 +17,7 @@ gems:
   - jekyll-feed
   - jekyll-paginate
 
-paginate: 7
+paginate: 10
 paginate_path: "/page/:num/"
 
 #Disqus shortname

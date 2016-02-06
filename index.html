@@ -11,13 +11,13 @@ order: 1
       {% include large_post.html %}
     </article>
     {% endfor %}
-    {% for post in paginator.posts offset:1 limit:6 %}
+    {% for post in paginator.posts offset:1 limit:9 %}
     <article class="small">
       {% include small_post.html %}
     </article>
     {% endfor %}
   {% else %}
-    {% for post in paginator.posts limit:7 %}
+    {% for post in paginator.posts limit:10 %}
     <article class="small">
       {% include small_post.html %}
     </article>
