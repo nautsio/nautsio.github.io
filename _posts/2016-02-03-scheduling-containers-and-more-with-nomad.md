@@ -51,7 +51,7 @@ The new features they added in this release and the amount of fixes and improvem
 
 If you would like to follow the self-paced workshop by yourself, you can find the slides, machines and scripts for the workshop at [http://workshops.nauts.io](http://www.google.com) together with the other workshops of the event. Please let me know your experiences, so the workshop can be improved over time!
 
-{% code go %}
+```go
 //
 // Get details about a group in Active Directory.
 //
@@ -81,7 +81,7 @@ func getGroup(c *cli.Context) {
 
   fmt.Println(string(content))
 }
-{% endcode %}
+```
 
 I would like to thank the HashiCorp team for their amazing work on the 0.2.0 release, the speed at which they have added so many great new features and improved the stability is incredible.
 
