@@ -443,7 +443,7 @@ footer {
 
 footer #links {
   display: flex;
-  width: 100%;
+  width: 90%;
   justify-content: center;
   padding: 60px 0 0 0;
   max-width: 1280px;
@@ -457,10 +457,6 @@ footer #links ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-footer #links ul.powered img {
-  width: 100px;
 }
 
 footer #links ul li {
@@ -478,26 +474,24 @@ footer #links ul li.title {
   color: #2895F1;
 }
 
-footer #copyright {
-  /*clear: both;*/
-  color: #989898;
-  width: 100%;
-  padding: 30px 0 0 0;
+footer #links ul.powered li {
   font-size: 12px;
 }
 
-footer #copyright ul {
-  display: flex;
+footer #links ul.powered img {
+  width: 100px;
+}
+
+footer #copyright {
+  color: #989898;
+  width: 100%;
+  font-size: 12px;
+}
+
+footer #copyright p {
   border-top: 1px solid #333333;
-  flex: 1 90%;
   max-width: 90%;
   margin: 0 auto;
   padding: 20px 0 30px 0;
-  list-style: none;
   text-align: center;
-}
-
-footer #copyright ul li {
-  flex: 1 33%;
-  width: 33%;
 }
