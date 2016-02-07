@@ -403,9 +403,102 @@ main#post #disqus_thread {
 }
 
 /*
+  About.
+ */
+main#about {
+  margin: 150px 0 0 0;
+  text-align: left;
+}
+
+main#about section {
+  background-color: #F8F8F8;
+  padding: 20px 80px;
+}
+
+main#about section.narrow {
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+main#about section.xebia {
+  background-color: #6C1D5F;
+  color: #F8F8F8;
+}
+
+main#about section.xebia p {
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+/*
   Footer.
  */
 footer {
+  color: #F8F8F8;
   background: #222222;
-  height: 400px;
+}
+
+footer #links {
+  width: 1080px;
+  margin: 0 auto;
+  padding: 60px 0 0 0;
+}
+
+footer #links ul {
+  float: left;
+  text-align: left;
+  height: 300px;
+  width: 24%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer #links ul.powered img {
+  width: 100px;
+}
+
+footer #links ul li {
+  padding: 0;
+  margin: 0;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+footer #links ul li a {
+  text-decoration: none;
+  color: #F8F8F8;
+}
+
+footer #links ul li.title {
+  font-size: 16px;
+  color: #2895F1;
+}
+
+footer #copyright {
+  clear: both;
+  color: #989898;
+  width: 1280px;
+  margin: 0 auto;
+  padding: 30px 0;
+  border-top: 1px solid #333333;
+  font-size: 12px;
+}
+
+footer #copyright ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+footer #copyright ul li {
+  display: inline-block;
+  width: 33%;
+}
+
+footer #copyright ul li a {
+  text-decoration: none;
+  color: #F8F8F8;
 }
