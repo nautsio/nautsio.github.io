@@ -469,8 +469,9 @@ footer ul li a {
   color: #F8F8F8;
 }
 
-footer #links ul li.title {
+footer #links ul li h3 {
   font-size: 16px;
+  margin: 0;
   color: #2895F1;
 }
 
