@@ -434,6 +434,28 @@ main#about section.xebia p {
 }
 
 /*
+  Contact.
+ */
+
+main#contact {
+  margin: 150px 0 0 0;
+  text-align: left;
+}
+
+main#contact section {
+  background-color: #F8F8F8;
+  padding: 20px 80px;
+}
+
+main#contact section.narrow {
+  max-width: 960px;
+  margin: 20px auto;
+}
+main#contact pre.address{
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+/*
   Footer.
  */
 footer {
@@ -495,4 +517,8 @@ footer #copyright p {
   margin: 0 auto;
   padding: 20px 0 30px 0;
   text-align: center;
+}
+article ul {
+  margin-left: 80px;
+  padding-left: 20px;
 }
