@@ -2,6 +2,7 @@
 
 ## TODO:
 These things are still to be done:
+
 1. about page content and design (Bas, Erik)
 1. full contact form on contact page (Eric, Erik)
 1. create background image with nauts for non-post pages
