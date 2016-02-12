@@ -38,17 +38,6 @@ header {
   width: 90%;
 }
 
-header a#logo {
-  font-weight: bold;
-  color: #FFFFFF;
-  font-family: "Monserrat", "Helvetica Neue", Arial, sans-serif;
-  font-size: 32px;
-  line-height: 32px;
-  margin: 0;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
 header nav {
   flex: 1 90%;
   text-align: right;
@@ -59,6 +48,11 @@ header nav a {
   line-height: 32px;
   margin-left: 40px;
   text-decoration: none;
+  text-shadow: 1px 1px #2895F1;
+}
+
+header a#logo img {
+  -webkit-filter: drop-shadow(1px 1px 0 #2895F1);
 }
 
 main {
