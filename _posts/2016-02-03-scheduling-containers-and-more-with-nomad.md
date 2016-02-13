@@ -25,14 +25,6 @@ Specifically for the [Dutch Docker Day](http://www.google.com) on the 20th of No
 
 Last friday, November the 20th, was the first edition of the Dutch Docker Day where I helped prepare a workshop about "scheduling containers and more with Nomad". It was a great experience where attendees got to play with the new features included in 0.2.0, which nearly didn't make it into the workshop.
 
-<iframe
-  width="960px"
-  height="540px"
-  src="http://www.youtube.com/embed/_LjHpbE7RoU"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
-
 When HashiCorp released Nomad during their [HashiConf](http://www.google.com) event at the end of September, I was really excited as they always produce high quality tools with great user experience. As soon as the binary was available I downloaded it and tried to set up a cluster to see how it compared to some of it's competitors. The first release already had a lot of potential but also a lot of problems. For instance: when a container failed, Nomad would report it dead, but take no action; restart policies were still but a dream.
 
 <div><img src="https://iroller.io/content/images/2015/09/IMG_2373.JPG" /></div>
@@ -50,38 +42,6 @@ It took until late in the evening to get an updated [Vagrant box](http://www.goo
 The new features they added in this release and the amount of fixes and improvements is staggering. In order to discover services there is no longer a need for extra tools such as Registrator, and your services are now automatically registered and deregistered as soon as they are started and stopped (which I first thought was a bug, cause I wasn't used to Nomad actually restarting my dead containers). The system scheduler is another feature I've been missing in other schedulers for a while, as it makes it possible to easily schedule services (such as Consul or Sysdig) on all of the eligible nodes in the cluster.
 
 If you would like to follow the self-paced workshop by yourself, you can find the slides, machines and scripts for the workshop at [http://workshops.nauts.io](http://www.google.com) together with the other workshops of the event. Please let me know your experiences, so the workshop can be improved over time!
-
-```go
-//
-// Get details about a group in Active Directory.
-//
-func getGroup(c *cli.Context) {
-  if len(c.Args()) < 1 {
-    cli.ShowSubcommandHelp(c)
-    os.Exit(1)
-  }
-
-  groupID := c.Args()[0]
-  credentials := readCredentials()
-
-  address := fmt.Sprintf("https://graph.windows.net/%s/groups/%s?api-version=1.6",
-    credentials.Company, groupID)
-  client := &http.Client{}
-  req, err := http.NewRequest("GET", address, nil)
-  req.Header.Add("Host", "graph.windows.net")
-  req.Header.Add("Authorization", credentials.Token.AccessToken)
-  req.Header.Add("Content-Type", "application/json")
-  req.Close = true
-
-  resp, err := client.Do(req)
-  check(err)
-
-  content, err := ioutil.ReadAll(resp.Body)
-  check(err)
-
-  fmt.Println(string(content))
-}
-```
 
 I would like to thank the HashiCorp team for their amazing work on the 0.2.0 release, the speed at which they have added so many great new features and improved the stability is incredible.
 
