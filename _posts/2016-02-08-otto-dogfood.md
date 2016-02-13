@@ -3,7 +3,7 @@ layout: post
 title: "Otto Dog Food"
 author: Bastiaan Bakker
 date: 2016-02-08
-cover: /img/graphic-hero-728d3dc0.png
+cover: /img/2016-02-08-otto-dogfood/otto-cover.png
 categories:
   - article
 comments: true
@@ -22,5 +22,5 @@ tags:
 	- 'make bootstrap' fails: cannot write to /opt/gopath/sources
 - fix:
 	- add shell script to Vagrantfile that corrects file permissions
-- follow up: create PR 
+- follow up: create PR
 - end: rejoice!
