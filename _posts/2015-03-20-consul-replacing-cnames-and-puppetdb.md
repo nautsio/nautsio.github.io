@@ -2,7 +2,7 @@
 title: "Consul: the end of the CNAME and PuppetDB?"
 author: Benny Cornelissen
 tags: consul puppet
-cover: https://jaxenter.com/wp-content/uploads/2014/12/20141204_DockerCon-preview_004-6453-e1417714409313-1024x682.jpg
+cover: /img/2015-03-20-consul-replacing-cnames-and-puppetdb/consul-cover.png
 difficulty: basic
 externalurl: http://blog.bennycornelissen.nl/consul-the-end-of-the-cname/
 ---

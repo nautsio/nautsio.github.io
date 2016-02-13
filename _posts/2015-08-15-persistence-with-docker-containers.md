@@ -1,7 +1,7 @@
 ---
 author: Armin Coralic
 tags: docker flocker
-cover: http://images.techtimes.com/data/images/full/205115/rkt-1-0-coreos.jpg?w=600
+cover: /img/2015-08-15-persistence-with-docker-containers/klm-cover.jpg
 difficulty: advanced
 externalurl: http://blog.xebia.com/2015/08/15/innovation-day-at-klm-persistence-with-docker-containers-2/
 ---

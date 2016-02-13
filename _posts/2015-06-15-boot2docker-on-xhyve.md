@@ -1,7 +1,7 @@
 ---
 author: Simon van der Veldt
 tags: docker
-cover: https://rsmitty.github.io/img/posts/2015-06-23-docker-machine-and-openstack/dockermachine.png
+cover: /img/2015-06-15-boot2docker-on-xhyve/boot2docker-cover.png
 difficulty: advanced
 externalurl: http://simonvanderveldt.nl/boot2docker-on-xhyve/
 ---

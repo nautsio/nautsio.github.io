@@ -1,7 +1,7 @@
 ---
 author: Sebastiaan van Steenis
 tags: docker
-cover: https://iroller.io/content/images/2015/09/IMG_2372-1.JPG
+cover: /img/2015-11-18-docker-universal-control-plane/dockerucp-cover.jpg
 difficulty: basic
 externalurl: http://blog.xebia.com/docker-to-the-on-premise-rescue/
 ---

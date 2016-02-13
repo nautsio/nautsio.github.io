@@ -1,7 +1,7 @@
 ---
 author: Sebastiaan van Steenis
 tags: docker
-cover: https://tctechcrunch2011.files.wordpress.com/2015/11/control_plane_2.jpg
+cover: /img/2015-12-21-security-is-maturing-in-the-docker-ecosystem/nautilus-cover.jpg
 difficulty: basic
 externalurl: http://blog.xebia.com/security-is-maturing-in-the-docker-ecosystem/
 ---

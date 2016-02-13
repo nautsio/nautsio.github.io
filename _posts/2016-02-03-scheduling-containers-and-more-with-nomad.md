@@ -3,7 +3,7 @@ layout: post
 title: "Scheduling containers and more with Nomad"
 author: Erik Veld
 date: 2016-02-03
-cover: https://d13yacurqjgara.cloudfront.net/users/2898/screenshots/2001298/mesosphere_dcos_-_services_grid.png
+cover: /img/2016-02-03-scheduling-containers-and-more-with-nomad/nomad-cover.jpg
 categories:
   - article
 comments: true

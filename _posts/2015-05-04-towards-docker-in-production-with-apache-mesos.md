@@ -2,7 +2,7 @@
 title: "Towards Docker in production with Apache Mesos"
 author: Ivo Verberk
 tags: docker mesos
-cover: http://blog.codeship.com/wp-content/uploads/2015/06/Simon-Eskildsen-at-DockerCon-2015.jpg
+cover: /img/2015-05-04-towards-docker-in-production-with-apache-mesos/mesos-cover.png
 difficulty: advanced
 externalurl: http://www.ivoverberk.nl/towards-docker-in-production-with-apache-mesos/
 ---

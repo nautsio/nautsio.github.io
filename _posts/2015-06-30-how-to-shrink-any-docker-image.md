@@ -1,7 +1,7 @@
 ---
 author: Mark van Holsteijn
 tags: docker
-cover: http://cdn.shopify.com/s/files/1/0051/4802/products/mona-1_1024x1024.jpg?v=1447180277
+cover: /img/2015-06-30-how-to-shrink-any-docker-image/shrinkray-cover.jpg
 difficulty: basic
 externalurl: http://blog.xebia.com/2015/06/30/how-to-create-the-smallest-possible-docker-container-of-any-image/
 ---
