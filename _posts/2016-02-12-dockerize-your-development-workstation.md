@@ -13,9 +13,9 @@ tags:
   - event
   - talk
 ---
-Watch how you can decrease set up time and reproducibly create your development environment and be able to share it with your coworkers. Armin describes how everything can be dockerized, even non CLI applications.
+Armin Coralic, shares all the practical examples of how he uses Docker in his day-to-day work as a full stack developer to ease his life and save loads of time!
 
-Armin shares his experiences with joining development teams and the trouble you run in to when trying to reproduce the development environments that are being used by the teams.
+The whole Docker community seems to be busy with getting Docker containers in production and completely miss the huge benefit that can be obtained by using Docker to organize your development workstation. Watch how you can decrease set up time and reproducibly create your development environment and be able to share it with your coworkers. Armin describes how everything can be dockerized, even non CLI applications.
 
 <iframe
   width="960"

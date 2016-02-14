@@ -13,9 +13,7 @@ tags:
   - event
   - talk
 ---
-Introduction text about the dutch docker day talk.
-
-A paragraph that describes the main points of the video.
+Docker is taking the infrastructure world by storm, but what about the business justification for Docker? Michiel Sens explains an automated Software Delivery Pipeline using Vagrant, Ansible, Docker, Swarm, Consul and Jenkins that can help you demonstrate the advantages to your management.
 
 <iframe
   width="960"

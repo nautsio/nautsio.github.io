@@ -13,9 +13,7 @@ tags:
   - event
   - talk
 ---
-Introduction text about the dutch docker day talk.
-
-A paragraph that describes the main points of the video.
+Kelsey Hightower shows in this talk the inter-workings of Docker Swarm and how Kubernetes can be leveraged for advanced container management and orchestration through live demonstrations and story telling.
 
 <iframe
   width="960"

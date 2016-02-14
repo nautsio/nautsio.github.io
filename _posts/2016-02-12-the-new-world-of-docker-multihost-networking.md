@@ -13,9 +13,7 @@ tags:
   - event
   - talk
 ---
-Introduction text about the dutch docker day talk.
-
-A paragraph that describes the main points of the video.
+Docker 1.9 introduced a new networking architecture that uses VXLAN overlays to connect distinct Docker hosts. Nicola Kabar goes over the new architecture, it's advantages, and use-cases, and demoes how it can enable scaling applications with Compose and Swarm.
 
 <iframe
   width="960"
