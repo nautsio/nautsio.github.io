@@ -5,7 +5,6 @@ order: 4
 <div id="background"></div>
 <main id="tags">
   <section class="narrow">
-  <!-- <div class='list-group'> -->
     <h2>Tags</h2>
     <p>
       These are the tags that were used in articles on this website. For each tag there is a list of related articles.
@@ -16,7 +15,7 @@ order: 4
       {% for tag in tags_list %}
         <li>
           <a href="/tags#{{ tag }}-ref">
-          {{ tag }} <span class='badge'>({{ site.tags[tag].size }})</span>
+            {{ tag }} <span>({{ site.tags[tag].size }})</span>
           </a>
         </li>
       {% endfor %}
@@ -24,7 +23,7 @@ order: 4
       {% for tag in tags_list %}
         <li>
           <a href="/tags#{{ tag[0] }}-ref">
-            {{ tag[0] }} <span class='badge'>({{ tag[1].size }})</span>
+            {{ tag[0] }} <span>({{ tag[1].size }})</span>
           </a>
         </li>
       {% endfor %}
@@ -32,35 +31,26 @@ order: 4
     </ul>
 
     {% assign tags_list = nil %}
-  <!-- </div> -->
-
-
-  {% for tag in site.tags %}
-    <h3 id="{{ tag[0] }}-ref">{{ tag[0] }}</h3>
-    <ul class="pages">
-      {% assign pages_list = tag[1] %}
-
-      {% for node in pages_list %}
-        {% if node.title != null %}
-          {% if group == null or group == node.group %}
-            {% if page.url == node.url %}
-            <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
-            {% else %}
+    {% for tag in site.tags %}
+      <h3 id="{{ tag[0] }}-ref">{{ tag[0] }}</h3>
+      <ul class="pages">
+        {% assign pages_list = tag[1] %}
+        {% for node in pages_list %}
+          {% if node.title != null %}
+            {% if group == null or group == node.group %}
               <li>
-                {% if node.externalurl %}
-                  <a href="{{ node.externalurl }}" target="_blank" class="read-more">{{node.title}}</a>
-                {% else %}
-                  <a href="{{ site.baseurl }}{{ node.url }}" class="read-more">{{node.title}}</a>
-                {% endif %}
+              {% if node.externalurl %}
+                <a href="{{ node.externalurl }}" target="_blank">{{node.title}}</a>
+              {% else %}
+                <a href="{{ site.baseurl }}{{ node.url }}">{{node.title}}</a>
+              {% endif %}
               </li>
             {% endif %}
           {% endif %}
-        {% endif %}
-      {% endfor %}
-
-      {% assign pages_list = nil %}
-      {% assign group = nil %}
-    </ul>
-  {% endfor %}
+        {% endfor %}
+        {% assign pages_list = nil %}
+        {% assign group = nil %}
+      </ul>
+    {% endfor %}
   <section class="narrow">
 </main>
