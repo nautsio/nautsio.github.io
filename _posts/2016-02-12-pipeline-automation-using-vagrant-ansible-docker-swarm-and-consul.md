@@ -2,7 +2,7 @@
 layout: post
 title: "Pipeline automation using Vagrant, Ansible, Docker, Swarm and Consul"
 author: Erik Veld
-date: 2016-02-12
+date: 2016-02-12 12:45
 cover: /img/2016-02-12-pipeline-automation-using-vagrant-ansible-docker-swarm-and-consul/cicd-video.png
 categories:
   - videos

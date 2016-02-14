@@ -2,7 +2,7 @@
 layout: post
 title: "Dockerize your Development Workstation"
 author: Erik Veld
-date: 2016-02-12
+date: 2016-02-12 11:45
 cover: /img/2016-02-12-dockerize-your-development-workstation/workspace-video.png
 categories:
   - videos

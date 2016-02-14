@@ -2,7 +2,7 @@
 layout: post
 title: "The New World of Docker Multihost Networking"
 author: Erik Veld
-date: 2016-02-12
+date: 2016-02-12 11:15
 cover: /img/2016-02-12-the-new-world-of-docker-multihost-networking/networking-video.png
 categories:
   - videos

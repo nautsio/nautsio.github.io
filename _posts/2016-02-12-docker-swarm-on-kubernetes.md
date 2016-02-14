@@ -2,7 +2,7 @@
 layout: post
 title: "Docker Swarm on Kubernetes"
 author: Erik Veld
-date: 2016-02-12
+date: 2016-02-12 12:15
 cover: /img/2016-02-12-docker-swarm-on-kubernetes/kelsey-video.png
 categories:
   - videos

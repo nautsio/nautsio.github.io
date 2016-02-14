@@ -2,7 +2,7 @@
 layout: post
 title: "Dutch Docker Day 2015, The opening and welcome"
 author: Erik Veld
-date: 2016-02-12
+date: 2016-02-12 09:00
 cover: /img/2016-02-12-dutchdockerday-opening-and-welcome/opening-video.png
 categories:
   - videos
