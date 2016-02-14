@@ -13,4 +13,4 @@ These things are still to be done:
 1. [IN PROGRESS] create OTTO post (Bastiaan)
 1. workshops and other content on "try it yourself" page and design
 1. style sitemap?
-1. style tags?
+1. [DONE] style tags?

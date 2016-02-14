@@ -445,8 +445,96 @@ main#contact section.narrow {
   max-width: 960px;
   margin: 20px auto;
 }
+
 main#contact pre.address{
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+/*
+  Tags.
+ */
+main#tags {
+  margin: 150px 0 0 0;
+  text-align: left;
+}
+
+main#tags section {
+  background-color: #F8F8F8;
+  padding: 20px 80px;
+}
+
+main#tags section.narrow {
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+main#tags section h1, main#tags section h2, main#tags section h1, main#tags section h3 {
+  font-weight: bold;
+  font-family: "Monserrat", "Helvetica Neue", Arial, sans-serif;
+  margin: 20px 80px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+main#tags section h2 {
+  font-size: 48px;
+  line-height: 52px;
+}
+
+main#tags section h3 {
+  margin: 50px 80px 20px 80px;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+main#tags section ul.list {
+  list-style: none;
+  margin: 40px 80px 20px 80px;
+  padding: 0;
+}
+
+main#tags section ul.list li {
+  display: inline-block;
+  background: #A9A9A9;
+  border-radius: 15px;
+  padding: 5px 12px;
+  margin: 0 10px 10px 0;
+}
+
+main#tags section ul.list li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+main#tags section ul.list li a span {
+  font-size: 12px;
+  margin-left: 10px;
+  letter-spacing: 1px;
+}
+
+main#tags section ul.pages {
+  list-style: circle;
+  color: #666666;
+  margin: 20px 80px 20px 105px;
+  padding: 0;
+}
+
+main#tags section ul.pages li {
+  padding: 0 0 10px 0;
+}
+
+main#tags section ul.pages li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #2895F1;
+}
+
+main#tags section p {
+  margin: 20px 80px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  word-spacing: 1px;
 }
 
 /*
