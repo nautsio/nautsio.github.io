@@ -13,9 +13,9 @@ tags:
   - event
   - talk
 ---
-Introduction text about the dutch docker day talk.
+Watch how you can decrease set up time and reproducibly create your development environment and be able to share it with your coworkers. Armin describes how everything can be dockerized, even non CLI applications.
 
-A paragraph that describes the main points of the video.
+Armin shares his experiences with joining development teams and the trouble you run in to when trying to reproduce the development environments that are being used by the teams.
 
 <iframe
   width="960"
