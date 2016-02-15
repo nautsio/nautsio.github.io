@@ -15,17 +15,21 @@ html, body {
 
 #background {
   background: #2895F1;
-  background-position: center center;
-  background-size: cover;
   height: 40vh;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: -1;
+  background-image: url(/img/nauts-bg.png);
+  background-position: center center;
 }
 
 #background.frontpage {
   height: 100vh;
+}
+
+#background.post {
+  background-size: cover;
 }
 
 header {
