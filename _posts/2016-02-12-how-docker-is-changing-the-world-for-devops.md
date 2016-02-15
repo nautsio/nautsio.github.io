@@ -13,7 +13,7 @@ tags:
   - event
   - talk
 ---
-In his talk Iain Gray of Docker shares Docker's vision on how next generation datacenters change the way both development and operations work in practice. Iain will share the latest Docker trends and updates from Docker's product roadmap as presented earlier that week during DockerCon Europe in Barcelona.
+In his [talk](http://www.slideshare.net/xebia/dutch-docker-day-how-docker-is-changing-the-world-for-development-and-operations) Iain Gray of Docker shares Docker's vision on how next generation datacenters change the way both development and operations work in practice. Iain will share the latest Docker trends and updates from Docker's product roadmap as presented earlier that week during DockerCon Europe in Barcelona.
 
 Docker's vision on the ecosystem is further highlighted by sharing a number of customer success stories.
 

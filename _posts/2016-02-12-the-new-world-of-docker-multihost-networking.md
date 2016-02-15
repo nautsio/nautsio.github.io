@@ -13,7 +13,7 @@ tags:
   - event
   - talk
 ---
-Docker 1.9 introduced a new networking architecture that uses VXLAN overlays to connect distinct Docker hosts. Nicola Kabar goes over the new architecture, it's advantages, and use-cases, and demoes how it can enable scaling applications with Compose and Swarm.
+Docker 1.9 introduced a new networking architecture that uses VXLAN overlays to connect distinct Docker hosts. Nicola Kabar [goes over](http://www.slideshare.net/xebia/dutch-docker-day-the-new-world-of-docker-multihost-networking) the new architecture, it's advantages, and use-cases, and demoes how it can enable scaling applications with Compose and Swarm.
 
 <iframe
   width="960"

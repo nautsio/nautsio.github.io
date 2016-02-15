@@ -13,7 +13,7 @@ tags:
   - event
   - talk
 ---
-Rik Farenhorst opens the conference and talks about Xebia and the unique format of the Dutch Docker Day. Mark van Holsteijn then talks about New IT and Docker's role in it.
+Rik Farenhorst opens the conference and [talks](http://www.slideshare.net/xebia/opening-welcome-dutch-docker-day) about Xebia and the unique format of the Dutch Docker Day. Mark van Holsteijn then talks about New IT and Docker's role in it.
 
 <iframe
   width="960"

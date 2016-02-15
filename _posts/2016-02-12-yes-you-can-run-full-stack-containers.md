@@ -13,7 +13,7 @@ tags:
   - event
   - talk
 ---
-The current dogma about using Docker is that a container should run a single process and fulfill a single task. In this talk, Thomas Kruitbosch and Eric Nieuwenhuijsen share their experience in using Docker containers as a complete virtual machine running web servers, applications and even the MySQL database in a single container!
+The current dogma about using Docker is that a container should run a single process and fulfill a single task. In this [talk](http://www.slideshare.net/xebia/dutch-docker-day-yes-you-can-run-full-stack-containers), Thomas Kruitbosch and Eric Nieuwenhuijsen share their experience in using Docker containers as a complete virtual machine running web servers, applications and even the MySQL database in a single container!
 
 They describe how they used Docker virtual machines as the binary artifact that moves through a build pipeline for each feature branch as it was the fastest way to move a traditional development process to a state of the art Continuous Delivery pipeline.
 

@@ -13,7 +13,7 @@ tags:
   - event
   - talk
 ---
-Joyent’s Casey Bisson will demonstrates Mesos running in a public cloud on bare metal and scaling containerized workloads across multiple data centers — and prove why container-native is the future of the data center.
+Joyent’s Casey Bisson [demonstrates](http://www.slideshare.net/xebia/dutch-docker-day-2015-mesos-in-a-moment) Mesos running in a public cloud on bare metal and scaling containerized workloads across multiple data centers — and prove why container-native is the future of the data center.
 
 Mesos has proven to be a powerful framework for orchestrating Containerized applications in data centers with fixed pools of resources. In the cloud, however, pre-provisioning VMs to run Mesos workloads slows the ability to scale applications up and down with changing demand. Worse, VMs impose a performance penalty on application performance and risk becoming pets if not managed properly.
 

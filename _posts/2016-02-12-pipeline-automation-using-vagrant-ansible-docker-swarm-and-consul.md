@@ -13,7 +13,7 @@ tags:
   - event
   - talk
 ---
-Docker is taking the infrastructure world by storm, but what about the business justification for Docker? Michiel Sens explains an automated Software Delivery Pipeline using Vagrant, Ansible, Docker, Swarm, Consul and Jenkins that can help you demonstrate the advantages to your management.
+Docker is taking the infrastructure world by storm, but what about the business justification for Docker? Michiel Sens [explains](http://www.slideshare.net/xebia/dutch-docker-day-2015-pipeline-automation-using-vagrant-ansible-docker-swarm-consul-and-jenkins) an automated Software Delivery Pipeline using Vagrant, Ansible, Docker, Swarm, Consul and Jenkins that can help you demonstrate the advantages to your management.
 
 <iframe
   width="960"
