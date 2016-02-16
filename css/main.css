@@ -421,14 +421,46 @@ main#about section.narrow {
   margin: 20px auto;
 }
 
-main#about section.xebia {
-  background-color: #6C1D5F;
-  color: #F8F8F8;
+main#about section h1, main#about section h2, main#about section h1, main#about section h3 {
+  font-weight: bold;
+  font-family: "Monserrat", "Helvetica Neue", Arial, sans-serif;
+  margin: 20px 80px;
+  padding: 0;
+  text-transform: uppercase;
 }
 
-main#about section.xebia p {
-  max-width: 960px;
-  margin: 20px auto;
+main#about section h2 {
+  font-size: 48px;
+  line-height: 52px;
+}
+
+main#about section h3 {
+  margin: 50px 80px 20px 80px;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+main#about section h2 + p {
+  color: #555555;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 20px 80px 40px 80px;
+}
+
+main#about section p {
+  margin: 20px 80px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  word-spacing: 1px;
+}
+
+main#about section p b {
+  font-weight: bolder;
+}
+
+main#about section p a {
+  text-decoration: none;
+  color: #2895F1;
 }
 
 /*
