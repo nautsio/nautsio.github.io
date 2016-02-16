@@ -2,7 +2,7 @@
 layout: post
 title: "Otto Dog Food"
 author: Bastiaan Bakker
-date: 2016-02-13
+date: 2016-02-28
 cover: /img/2016-02-08-otto-dogfood/otto-cover.png
 categories:
   - article
