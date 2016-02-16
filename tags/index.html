@@ -14,7 +14,7 @@ order: 4
     {% if tags_list.first[0] == null %}
       {% for tag in tags_list %}
         <li>
-          <a href="/tags#{{ tag }}-ref">
+          <a href="/tags#{{ tag }}">
             {{ tag }} <span>({{ site.tags[tag].size }})</span>
           </a>
         </li>
@@ -22,7 +22,7 @@ order: 4
     {% else %}
       {% for tag in tags_list %}
         <li>
-          <a href="/tags#{{ tag[0] }}-ref">
+          <a href="/tags#{{ tag[0] }}">
             {{ tag[0] }} <span>({{ tag[1].size }})</span>
           </a>
         </li>
@@ -32,7 +32,7 @@ order: 4
 
     {% assign tags_list = nil %}
     {% for tag in site.tags %}
-      <h3 id="{{ tag[0] }}-ref">{{ tag[0] }}</h3>
+      <h3 id="{{ tag[0] }}">{{ tag[0] }}</h3>
       <ul class="pages">
         {% assign pages_list = tag[1] %}
         {% for node in pages_list %}
