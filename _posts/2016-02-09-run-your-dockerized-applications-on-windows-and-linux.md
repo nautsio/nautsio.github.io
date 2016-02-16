@@ -2,8 +2,8 @@
 layout: post
 title: "Run your Dockerized ASP.NET applications on Windows and Linux"
 author: Erik Veld
-date: 2016-02-12 13:15
-cover: /img/2016-02-12-run-your-dockerized-applications-on-windows-and-linux/windows-video.png
+date: 2016-02-09 13:15
+cover: /img/2016-02-09-run-your-dockerized-applications-on-windows-and-linux/windows-video.png
 categories:
   - videos
 comments: true

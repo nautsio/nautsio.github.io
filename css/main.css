@@ -482,9 +482,108 @@ main#contact section.narrow {
   margin: 20px auto;
 }
 
-main#contact pre.address{
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+main#contact section h2 {
+  font-weight: bold;
+  font-family: "Monserrat", "Helvetica Neue", Arial, sans-serif;
+  margin: 20px 80px;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 52px;
 }
+
+main#contact section h2 + p {
+  color: #555555;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 20px 80px 40px 80px;
+}
+
+main#contact form {
+  padding: 20px 80px;
+}
+
+main#contact form input {
+  padding: 0 10px;
+  height: 50px;
+  width: 85%;
+  border: 1px solid #CCCCCC;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 50px;
+  margin: 0 0 20px 0;
+}
+
+main#contact form textarea {
+  border: 1px solid #CCCCCC;
+  border-radius: 2px;
+  font-size: 16px;
+  width: 90%;
+  line-height: 50px;
+  padding: 0 10px;
+  height: 225px;
+}
+
+main#contact form .fields {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+main#contact form .submit {
+  clear: both;
+  font-size: 16px;
+}
+
+main#contact form .submit button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background: #FED136;
+  border-radius: 2px;
+}
+
+/*
+  Thanks.
+ */
+ /*
+   Contact.
+  */
+
+ main#thanks {
+   margin: 150px 0 0 0;
+   text-align: left;
+ }
+
+ main#thanks section {
+   background-color: #F8F8F8;
+   padding: 20px 80px;
+   min-height: 500px;
+ }
+
+ main#thanks section.narrow {
+   max-width: 960px;
+   margin: 20px auto;
+ }
+
+ main#thanks section h2 {
+   font-weight: bold;
+   font-family: "Monserrat", "Helvetica Neue", Arial, sans-serif;
+   margin: 20px 80px;
+   padding: 0;
+   text-transform: uppercase;
+   font-size: 48px;
+   line-height: 52px;
+ }
+
+ main#thanks section h2 + p {
+   color: #555555;
+   font-size: 24px;
+   line-height: 32px;
+   margin: 20px 80px 40px 80px;
+ }
 
 /*
   Tags.

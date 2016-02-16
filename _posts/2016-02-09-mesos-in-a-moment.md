@@ -2,8 +2,8 @@
 layout: post
 title: "Mesos in a moment"
 author: Erik Veld
-date: 2016-02-12 14:15
-cover: /img/2016-02-12-mesos-in-a-moment/mesos-video.png
+date: 2016-02-09 14:15
+cover: /img/2016-02-09-mesos-in-a-moment/mesos-video.png
 categories:
   - videos
 comments: true

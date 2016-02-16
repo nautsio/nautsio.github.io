@@ -2,8 +2,8 @@
 layout: post
 title: "How Docker is changing the world for development and operations"
 author: Erik Veld
-date: 2016-02-12 10:00
-cover: /img/2016-02-12-how-docker-is-changing-the-world-for-devops/docker-video.png
+date: 2016-02-09 10:00
+cover: /img/2016-02-09-how-docker-is-changing-the-world-for-devops/docker-video.png
 categories:
   - videos
 comments: true
