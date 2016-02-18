@@ -24,6 +24,6 @@ paginate_path: "/page/:num/"
 #Disqus shortname
 disqus: nautsio
 #Enable when running locally
-disqus_developer: 1
+disqus_developer: 0
 
 twitter_username: nautsio
