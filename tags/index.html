@@ -1,0 +1,56 @@
+---
+layout: default
+order: 4
+---
+<div id="background"></div>
+<main id="tags">
+  <section class="narrow">
+    <h2>Tags</h2>
+    <p>
+      These are the tags that were used in articles on this website. For each tag there is a list of related articles.
+    </p>
+    {% assign tags_list = site.tags | sort %}
+    <ul class="list">
+    {% if tags_list.first[0] == null %}
+      {% for tag in tags_list %}
+        <li>
+          <a href="/tags#{{ tag }}">
+            {{ tag }} <span>({{ site.tags[tag].size }})</span>
+          </a>
+        </li>
+      {% endfor %}
+    {% else %}
+      {% for tag in tags_list %}
+        <li>
+          <a href="/tags#{{ tag[0] }}">
+            {{ tag[0] }} <span>({{ tag[1].size }})</span>
+          </a>
+        </li>
+      {% endfor %}
+    {% endif %}
+    </ul>
+
+    {% assign tags_list = nil %}
+    {% for tag in site.tags %}
+      <h3 id="{{ tag[0] }}">{{ tag[0] }}</h3>
+      <ul class="pages">
+        {% assign pages_list = tag[1] %}
+        {% for node in pages_list %}
+          {% if node.title != null %}
+            {% if group == null or group == node.group %}
+              <li>
+              {% if node.externalurl %}
+                <a href="{{ node.externalurl }}" target="_blank">{{node.title}}</a>
+              {% else %}
+                <a href="{{ site.baseurl }}{{ node.url }}">{{node.title}}</a>
+              {% endif %}
+              </li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        {% assign pages_list = nil %}
+        {% assign group = nil %}
+      </ul>
+    {% endfor %}
+  <section class="narrow">
+</main>

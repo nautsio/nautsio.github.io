@@ -1,38 +1,29 @@
-url: http://cargonauts.io
+url: https://nauts.io
 
 # Site settings
 title: Nauts
 tagline: The data center automation experts!
-email: info@cargonauts.io
+email: info@nauts.io
 description: "Nauts are experts in Datacenter Automation. We are experienced infrastructure engineers with a focus on containerization."
-
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary: fed136
-  secondary: fec503
-  secondary-dark: 333
-  blue: 00b3fe
-
-collections:
-  - team
-  - events
-  - expertise
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: http://twitter.com/cargonauts
-  - title: github
-    url: http://github.com/cargonauts
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: Utrechtseweg 49
-  - line: 1213 TL
-  - line: The Netherlands
 
 # Build settings
 markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
 permalink: pretty
+
 gems:
-  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
+paginate: 10
+paginate_path: "/page/:num/"
+
+#Disqus shortname
+disqus: nautsio
+#Enable when running locally
+disqus_developer: 1
+
+twitter_username: nautsio

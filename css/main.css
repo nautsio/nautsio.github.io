@@ -1,0 +1,755 @@
+html {
+  background-color: #F8F8F8;
+  color: #333333;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+#background {
+  background: #2895F1;
+  height: 40vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  background-image: url(/img/nauts-bg.png);
+  background-position: center center;
+}
+
+#background.frontpage {
+  height: 100vh;
+}
+
+#background.post {
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  left: 5%;
+  padding: 20px 0;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  width: 90%;
+}
+
+header nav {
+  flex: 1 90%;
+  text-align: right;
+}
+
+header nav a {
+  color: #FFFFFF;
+  line-height: 32px;
+  margin-left: 40px;
+  text-decoration: none;
+  text-shadow: 1px 1px #2895F1;
+}
+
+header a#logo img {
+  -webkit-filter: drop-shadow(1px 1px 0 #2895F1);
+}
+
+main {
+  width: 100%;
+}
+
+/*
+  Index layout.
+ */
+main#index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1280px;
+  margin: 100px auto 0 auto;
+  text-align: left;
+}
+
+main#index article.large {
+  flex: 1 100%;
+  margin: 15px 0;
+}
+
+main#index article.large .image {
+  display: block;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main#index article.large .post {
+  display: block;
+  background-color: #F8F8F8;
+  max-width: 500px;
+  padding: 20px 25px;
+}
+
+main#index article.small {
+  flex: 1 0 30%;
+  margin: 15px 0;
+  max-width: 31.5%;
+}
+
+main#index article.small .image {
+  display: block;
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main#index article.small .post {
+  display: block;
+  background-color: #F8F8F8;
+  padding: 20px 25px;
+  height: 275px;
+}
+
+/*
+  Handle mobile phones.
+ */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  main#index article.small {
+    flex: 1 0 50%;
+    max-width: 48.5%;
+  }
+
+  main#index article.small .post {
+    height: 220px;
+  }
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    main#index article.small {
+      flex: 1 0 100%;
+      max-width: 100%;
+    }
+
+    main#index article.small .post {
+      height: 170px;
+    }
+}
+
+main#index article .post h2 {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+main#index article .post h2 a {
+  color: #333333;
+  text-decoration: none;
+}
+
+main#index article .post .details {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+main#index article .post p.intro {
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  word-spacing: 1px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+main#index article .post p.intro a {
+  text-decoration: none;
+  color: #2895F1;
+}
+
+main#index h1, main#index article h2 {
+  font-weight: bold;
+  font-family: "Monserrat", "Helvetica Neue", Arial, sans-serif;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+/*
+  Pagination.
+ */
+main#index #pagination {
+  flex: 1 100%;
+  margin: 30px 0;
+  text-align: center;
+}
+
+main#index #pagination ul {
+  list-style: none;
+  margin: 40px 80px 20px 80px;
+  padding: 0;
+}
+
+main#index #pagination ul li {
+  display: inline-block;
+  border-radius: 15px;
+  margin: 0 10px 10px 0;
+  background: #2895F1;
+}
+
+main#index #pagination ul li.inactive {
+  background: #A9A9A9;
+  color: #fff;
+}
+
+main#index #pagination ul li span {
+  padding: 5px 12px;
+  display: block;
+}
+
+main#index #pagination ul li a {
+  padding: 5px 12px;
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/*
+  Post layout.
+ */
+main#post {
+  max-width: 960px;
+  margin: 150px auto 0 auto;
+  text-align: left;
+}
+
+main#post article {
+  position: relative;
+  background-color: #F8F8F8;
+  display: block;
+  min-height: 400px;
+  padding: 5px 0 0 0;
+}
+
+main#post article ul#categories {
+  list-style: none;
+  margin: 40px 80px 20px 80px;
+  padding: 0;
+}
+
+main#post article ul#categories li {
+  display: inline-block;
+  border-radius: 15px;
+  padding: 5px 12px;
+  margin: 0 10px 10px 0;
+  background: #2895F1;
+}
+
+main#post article ul#categories li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+main#post article ul#social {
+  list-style: none;
+  margin: 40px 80px 20px 80px;
+  padding: 0;
+}
+
+main#post article ul#social li {
+  display: inline-block;
+  width: 20px;
+  background: #2895F1;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 0 10px 10px 0;
+}
+
+main#post article ul#social li.google {
+  background-color: #DA4835;
+}
+
+main#post article ul#social li.facebook {
+  background-color: #3E549D;
+}
+
+main#post article ul#social li.twitter {
+  background-color: #5EA9DD;
+}
+
+main#post article ul#social li.linkedin {
+  background-color: #006699;
+}
+
+main#post article ul#social li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+main#post article ul#tags {
+  list-style: none;
+  margin: 40px 80px 20px 80px;
+  padding: 0;
+}
+
+main#post article ul#tags li {
+  display: inline-block;
+  background: #A9A9A9;
+  border-radius: 15px;
+  padding: 5px 12px;
+  margin: 0 10px 10px 0;
+}
+
+main#post article ul#tags li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+main#post article h1, main#post article h2, main#post article h1, main#post article h3 {
+  font-weight: bold;
+  font-family: "Monserrat", "Helvetica Neue", Arial, sans-serif;
+  margin: 20px 80px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+main#post article h1, main#post article h2 {
+  font-size: 48px;
+  line-height: 52px;
+}
+
+main#post article h2 {
+  font-size: 48px;
+  line-height: 52px;
+}
+
+main#post article h3 {
+  font-size: 30px;
+  line-height: 35px;
+}
+
+main#post article #details {
+  margin: 20px 80px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  word-spacing: 1px;
+}
+
+main#post article #details + p {
+  color: #555555;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 20px 80px 40px 80px;
+}
+
+main#post article p {
+  margin: 20px 80px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  word-spacing: 1px;
+}
+
+main#post article p a {
+  text-decoration: none;
+  color: #2895F1;
+}
+
+main#post article blockquote p {
+  margin: 20px;
+  display: block;
+  color: #2895F1;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 40px;
+  font-style: italic;
+}
+
+main#post article img {
+  object-fit: scale-down;
+  width: 100%;
+  margin: 10px 0;
+}
+
+main#post article iframe {
+  object-fit: scale-down;
+  width: 100%;
+  margin: 10px 0;
+}
+
+main#post article pre {
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  max-width: 960px;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+main#post #disqus_thread {
+  margin: 0 80px;
+}
+
+/*
+  About.
+ */
+main#about {
+  margin: 150px 0 0 0;
+  text-align: left;
+}
+
+main#about section {
+  background-color: #F8F8F8;
+  padding: 20px 80px;
+}
+
+main#about section.narrow {
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+main#about section h1, main#about section h2, main#about section h1, main#about section h3 {
+  font-weight: bold;
+  font-family: "Monserrat", "Helvetica Neue", Arial, sans-serif;
+  margin: 20px 80px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+main#about section h2 {
+  font-size: 48px;
+  line-height: 52px;
+}
+
+main#about section h3 {
+  margin: 50px 80px 20px 80px;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+main#about section h2 + p {
+  color: #555555;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 20px 80px 40px 80px;
+}
+
+main#about section p {
+  margin: 20px 80px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  word-spacing: 1px;
+}
+
+main#about section p b {
+  font-weight: bolder;
+}
+
+main#about section p a {
+  text-decoration: none;
+  color: #2895F1;
+}
+
+main#about section p img {
+  display: block;
+  margin: auto;
+}
+
+main#about section .image img {
+  object-fit: scale-down;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+
+
+
+/*
+  Contact.
+ */
+
+main#contact {
+  margin: 150px 0 0 0;
+  text-align: left;
+}
+
+main#contact section {
+  background-color: #F8F8F8;
+  padding: 20px 80px;
+}
+
+main#contact section.narrow {
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+main#contact section h2 {
+  font-weight: bold;
+  font-family: "Monserrat", "Helvetica Neue", Arial, sans-serif;
+  margin: 20px 80px;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 52px;
+}
+
+main#contact section h2 + p {
+  color: #555555;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 20px 80px 40px 80px;
+}
+
+main#contact form {
+  padding: 20px 80px;
+}
+
+main#contact form input {
+  padding: 0 10px;
+  height: 50px;
+  width: 85%;
+  border: 1px solid #CCCCCC;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 50px;
+  margin: 0 0 20px 0;
+}
+
+main#contact form textarea {
+  border: 1px solid #CCCCCC;
+  border-radius: 2px;
+  font-size: 16px;
+  width: 90%;
+  line-height: 50px;
+  padding: 0 10px;
+  height: 225px;
+}
+
+main#contact form .fields {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+main#contact form .submit {
+  clear: both;
+  font-size: 16px;
+}
+
+main#contact form .submit button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background: #FED136;
+  border-radius: 2px;
+}
+
+/*
+  Thanks.
+ */
+ /*
+   Contact.
+  */
+
+ main#thanks {
+   margin: 150px 0 0 0;
+   text-align: left;
+ }
+
+ main#thanks section {
+   background-color: #F8F8F8;
+   padding: 20px 80px;
+   min-height: 500px;
+ }
+
+ main#thanks section.narrow {
+   max-width: 960px;
+   margin: 20px auto;
+ }
+
+ main#thanks section h2 {
+   font-weight: bold;
+   font-family: "Monserrat", "Helvetica Neue", Arial, sans-serif;
+   margin: 20px 80px;
+   padding: 0;
+   text-transform: uppercase;
+   font-size: 48px;
+   line-height: 52px;
+ }
+
+ main#thanks section h2 + p {
+   color: #555555;
+   font-size: 24px;
+   line-height: 32px;
+   margin: 20px 80px 40px 80px;
+ }
+
+/*
+  Tags.
+ */
+main#tags {
+  margin: 150px 0 0 0;
+  text-align: left;
+}
+
+main#tags section {
+  background-color: #F8F8F8;
+  padding: 20px 80px;
+}
+
+main#tags section.narrow {
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+main#tags section h1, main#tags section h2, main#tags section h1, main#tags section h3 {
+  font-weight: bold;
+  font-family: "Monserrat", "Helvetica Neue", Arial, sans-serif;
+  margin: 20px 80px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+main#tags section h2 {
+  font-size: 48px;
+  line-height: 52px;
+}
+
+main#tags section h3 {
+  margin: 50px 80px 20px 80px;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+main#tags section ul.list {
+  list-style: none;
+  margin: 40px 80px 20px 80px;
+  padding: 0;
+}
+
+main#tags section ul.list li {
+  display: inline-block;
+  background: #A9A9A9;
+  border-radius: 15px;
+  padding: 5px 12px;
+  margin: 0 10px 10px 0;
+}
+
+main#tags section ul.list li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+main#tags section ul.list li a span {
+  font-size: 12px;
+  margin-left: 10px;
+  letter-spacing: 1px;
+}
+
+main#tags section ul.pages {
+  list-style: circle;
+  color: #666666;
+  margin: 20px 80px 20px 105px;
+  padding: 0;
+}
+
+main#tags section ul.pages li {
+  padding: 0 0 10px 0;
+}
+
+main#tags section ul.pages li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #2895F1;
+}
+
+main#tags section p {
+  margin: 20px 80px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  word-spacing: 1px;
+}
+
+/*
+  Footer.
+ */
+footer {
+  color: #F8F8F8;
+  background: #222222;
+}
+
+footer #links {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  padding: 60px 0 0 0;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+footer #links ul {
+  flex: 1 25%;
+  height: 300px;
+  text-align: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer #links ul li {
+  line-height: 30px;
+  font-size: 14px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #F8F8F8;
+}
+
+footer #links ul li h3 {
+  font-size: 16px;
+  margin: 0;
+  color: #2895F1;
+}
+
+footer #links ul.powered li {
+  font-size: 12px;
+}
+
+footer #links ul.powered img {
+  width: 100px;
+}
+
+footer #copyright {
+  color: #989898;
+  width: 100%;
+  font-size: 12px;
+}
+
+footer #copyright p {
+  border-top: 1px solid #333333;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px 0 30px 0;
+  text-align: center;
+}
+article ul {
+  margin-left: 80px;
+  padding-left: 20px;
+}

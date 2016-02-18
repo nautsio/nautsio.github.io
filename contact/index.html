@@ -1,0 +1,39 @@
+---
+layout: default
+title: Contact
+order: 4
+---
+<div id="background"></div>
+<main id="contact">
+  <section class="narrow">
+    <h2>Want to get in touch?</h2>
+    <p>
+      Fill in this contact form and one of us will contact you ASAP.
+    </p>
+    <form action="http://formspree.io/info@nauts.io" method="POST">
+			<input type="hidden" name="_subject" value="Contact form cargonauts.io">
+			<input type="hidden" name="_next" value="/thanks/">
+      <div class="fields">
+        <p>
+            <input name="name" type="text" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+        </p>
+        <p>
+          <input name="_replyto" type="email" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+        </p>
+        <p>
+          <input name="phone" type="tel" placeholder="Your Phone" id="phone">
+        </p>
+      </div>
+      <div class="fields">
+        <p>
+          <textarea name="message" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+        </p>
+      </div>
+      <div class="submit">
+        <p>
+          <button type="submit">Send Message</button>
+        </p>
+      </div>
+    </form>
+  </section>
+</main>

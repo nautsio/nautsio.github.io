@@ -1,7 +1,9 @@
 ---
-externalurl: http://tichelaar.io/containers-as-a-service
 author: Bas Tichelaar
-category: blog
+tags: docker
+cover: /img/2015-02-17-containers-as-a-service/containers-cover.jpg
+difficulty: basic
+externalurl: http://tichelaar.io/containers-as-a-service
 ---
-With all the hype around Docker, a new layer of cloud computing is being formed. Traditionally, the cloud consists of IaaS, PaaS and SaaS offerings. IaaS is the Infrastructure-as-a-Service layer, which provides an API that is being consumed by the Platform-as-a-Service layer. This PaaS layer is an abstraction layer, that makes it easy for developers to build and deploy their applications. Popular providers are Heroku and EngineYard, but there are also private solutions like Cloud Foundry and Openshift.
-
+With all the hype around Docker, a new layer of cloud computing is being formed. Traditionally, the cloud consists of IaaS, PaaS and SaaS offerings.
+Where do containers fit in this picture?

@@ -1,16 +1,10 @@
-<!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-heading">{{ site.tagline }}</div>
-					<div class="intro-image"><img src="{{ "/assets/img/cargonauts-nauts.png" | prepend: site.baseurl }}" class="img-responsive"></div>
-                <div class="intro-button"><a href="#services" class="page-scroll btn btn-xl">How can we help you?</a></div>
-            </div>
-        </div>
-    </header>
-<!--
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
- -->
-
+<header>
+  <a id="logo" href="{{ "/" | prepend: site.baseurl }}"><img src="/img/nauts.svg" /></a>
+  <nav>
+    <a href="{{ "/" | prepend: site.baseurl }}">Blog</a>
+    {% assign sorted_pages = (site.pages | sort: 'order') %}
+    {% for page in sorted_pages %}
+      {% if page.title %}<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+    {% endfor %}
+  </nav>
+</header>

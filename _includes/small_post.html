@@ -1,0 +1,14 @@
+<div class="image" style="background-image: url({{post.cover}});"></div>
+<div class="post">
+  {% if post.externalurl %}
+    <h2><a href="{{ post.externalurl }}" target="_blank">{{post.title}}</a></h2>
+  {% else %}
+    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h2>
+  {% endif %}
+  <div class="details">
+    By {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}
+  </div>
+  <p class="intro">
+    {{ post.excerpt | strip_html | truncatewords:50}}
+  </p>
+</div>
