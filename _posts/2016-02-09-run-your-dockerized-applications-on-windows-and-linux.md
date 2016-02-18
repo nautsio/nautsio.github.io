@@ -17,10 +17,12 @@ In this innovative [talk](http://www.slideshare.net/xebia/dutch-docker-day-2015-
 
 Before today the power of ASP.NET web applications was limited to Windows machines. But now with ASP.NET 5 that limitation is gone by becoming cross-platform. This opens opportunities for new scenarios on different platforms. With the introduction of Windows 2016 it will be possible to do this and deploy and run your application in a Docker container on both Windows and Linux.
 
-<iframe
-  width="960"
-  height="540"
-  src="http://www.youtube.com/embed/0Wjlql7Tp-g"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
+<div class="video-container">
+  <iframe
+    width="960"
+    height="540"
+    src="http://www.youtube.com/embed/0Wjlql7Tp-g"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>

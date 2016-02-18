@@ -17,10 +17,12 @@ In his [talk](http://www.slideshare.net/xebia/dutch-docker-day-how-docker-is-cha
 
 Docker's vision on the ecosystem is further highlighted by sharing a number of customer success stories.
 
-<iframe
-  width="960"
-  height="540"
-  src="http://www.youtube.com/embed/-VSneCPGd-A"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
+<div class="video-container">
+  <iframe
+    width="960"
+    height="540"
+    src="http://www.youtube.com/embed/-VSneCPGd-A"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>

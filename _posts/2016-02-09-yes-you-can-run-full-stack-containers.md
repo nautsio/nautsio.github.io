@@ -17,10 +17,12 @@ The current dogma about using Docker is that a container should run a single pro
 
 They describe how they used Docker virtual machines as the binary artifact that moves through a build pipeline for each feature branch as it was the fastest way to move a traditional development process to a state of the art Continuous Delivery pipeline.
 
-<iframe
-  width="960"
-  height="540"
-  src="http://www.youtube.com/embed/XSWGx31vwVI"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
+<div class="video-container">
+  <iframe
+    width="960"
+    height="540"
+    src="http://www.youtube.com/embed/XSWGx31vwVI"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>

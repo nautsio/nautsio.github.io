@@ -15,10 +15,12 @@ tags:
 ---
 Kelsey Hightower shows in this talk the inter-workings of Docker Swarm and how Kubernetes can be leveraged for advanced container management and orchestration through live demonstrations and story telling.
 
-<iframe
-  width="960"
-  height="540"
-  src="http://www.youtube.com/embed/jyrBLezuYoM"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
+<div class="video-container">
+  <iframe
+    width="960"
+    height="540"
+    src="http://www.youtube.com/embed/jyrBLezuYoM"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>

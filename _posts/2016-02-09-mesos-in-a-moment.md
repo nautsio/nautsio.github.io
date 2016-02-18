@@ -19,10 +19,12 @@ Mesos has proven to be a powerful framework for orchestrating Containerized appl
 
 True container-native infrastructure solves this problem by eliminating VMs and running Mesos workloads securely on bare metal across an entire cloud, rather than on a defined "cluster." Eliminating the VM increases performance and speeds scaling, but how does this work, and how can applications best take advantage of it?
 
-<iframe
-  width="960"
-  height="540"
-  src="http://www.youtube.com/embed/zjMPSIw175Y"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
+<div class="video-container">
+  <iframe
+    width="960"
+    height="540"
+    src="http://www.youtube.com/embed/zjMPSIw175Y"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
