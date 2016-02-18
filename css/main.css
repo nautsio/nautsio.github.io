@@ -463,6 +463,20 @@ main#about section p a {
   color: #2895F1;
 }
 
+main#about section p img {
+  display: block;
+  margin: auto;
+}
+
+main#about section .image img {
+  object-fit: scale-down;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+
+
+
 /*
   Contact.
  */
