@@ -384,11 +384,11 @@ main#post article img {
   margin: 10px 0;
 }
 
-main#post article iframe {
+/*main#post article iframe {
   object-fit: scale-down;
   width: 100%;
   margin: 10px 0;
-}
+}*/
 
 main#post article pre {
   margin: 0;
