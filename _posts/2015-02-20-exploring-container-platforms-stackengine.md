@@ -2,7 +2,7 @@
 title: "Exploring container platforms: StackEngine"
 author: Bas Tichelaar
 tags: docker
-cover: /img/2015-02-20-exploring-container-platforms-stackengine/stackengine-cover.png
+preview: /img/2015-02-20-exploring-container-platforms-stackengine/stackengine-cover.png
 difficulty: basic
 externalurl: http://tichelaar.io/exploring-container-platforms-stackengine
 ---

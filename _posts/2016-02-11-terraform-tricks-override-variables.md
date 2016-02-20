@@ -2,7 +2,7 @@
 layout: post
 title: "Terraform tricks: Override variables"
 author: Benny Cornelissen
-cover: /img/2016-02-11-terraform-tricks-override-variables/terraform-cover.png
+preview: /img/2016-02-11-terraform-tricks-override-variables/terraform-cover.png
 categories:
   - article
 tags:

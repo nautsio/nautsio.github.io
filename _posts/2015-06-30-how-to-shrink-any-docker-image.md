@@ -1,7 +1,7 @@
 ---
 author: Mark van Holsteijn
 tags: docker
-cover: /img/2015-06-30-how-to-shrink-any-docker-image/shrinkray-cover.jpg
+preview: /img/2015-06-30-how-to-shrink-any-docker-image/shrinkray-cover.jpg
 difficulty: basic
 externalurl: http://blog.xebia.com/2015/06/30/how-to-create-the-smallest-possible-docker-container-of-any-image/
 ---

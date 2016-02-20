@@ -52,11 +52,11 @@ header nav a {
   line-height: 32px;
   margin-left: 40px;
   text-decoration: none;
-  text-shadow: 1px 1px #2895F1;
+  text-shadow: 0px 0px 2px #2895F1;
 }
 
 header a#logo img {
-  -webkit-filter: drop-shadow(1px 1px 0 #2895F1);
+  -webkit-filter: drop-shadow(0px 0px 2px #2895F1);
 }
 
 main {
@@ -338,8 +338,18 @@ main#post article h2 {
 }
 
 main#post article h3 {
-  font-size: 30px;
+  color: #444444;
+  font-size: 38px;
+  line-height: 42px;
+  margin: 40px 80px -10px 80px;
+}
+
+main#post article h4 {
+  text-transform: capitalize;
+  color: #444444;
+  font-size: 28px;
   line-height: 35px;
+  margin: 40px 80px -10px 80px;
 }
 
 main#post article #details {
@@ -363,6 +373,7 @@ main#post article p {
   word-spacing: 1px;
 }
 
+
 main#post article p a {
   text-decoration: none;
   color: #2895F1;
@@ -378,8 +389,29 @@ main#post article blockquote p {
   font-style: italic;
 }
 
+main#post article ul {
+  list-style: circle;
+  margin: 30px 85px;
+}
+
+main#post article ul li {
+  margin: 10px 0;
+}
+
+main#post article ul li h4 {
+  margin: 10px 0 10px 10px;
+}
+
+main#post article ul li p {
+  margin: 10px 0 30px 10px;
+}
+
+main#post article ul li a {
+  color: #2895F1;
+  text-decoration: none;
+}
+
 main#post article img {
-  object-fit: scale-down;
   width: 100%;
   margin: 10px 0;
 }
@@ -445,9 +477,18 @@ main#about section h2 {
 }
 
 main#about section h3 {
-  margin: 50px 80px 20px 80px;
-  font-size: 30px;
+  color: #444444;
+  font-size: 38px;
+  line-height: 42px;
+  margin: 40px 80px -10px 80px;
+}
+
+main#about section h4 {
+  text-transform: capitalize;
+  color: #444444;
+  font-size: 28px;
   line-height: 35px;
+  margin: 40px 80px -10px 80px;
 }
 
 main#about section h2 + p {
@@ -479,7 +520,6 @@ main#about section p img {
 }
 
 main#about section .image img {
-  object-fit: scale-down;
   width: 100%;
   margin: 10px 0;
   border: 1px solid #ccc;

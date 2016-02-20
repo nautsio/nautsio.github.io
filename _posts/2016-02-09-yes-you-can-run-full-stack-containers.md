@@ -3,7 +3,8 @@ layout: post
 title: "Yes, you can run full stack containers!"
 author: Erik Veld
 date: 2016-02-09 10:45
-cover: /img/2016-02-09-yes-you-can-run-full-stack-containers/fullstack-video.png
+cover: /img/ddd-cover.png
+preview: /img/2016-02-09-yes-you-can-run-full-stack-containers/fullstack-video.png
 categories:
   - videos
 comments: true

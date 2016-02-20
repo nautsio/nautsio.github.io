@@ -3,6 +3,7 @@ layout: post
 title: "Scheduling containers and more with Nomad"
 author: Erik Veld
 date: 2016-02-03
+preview: /img/2016-02-03-scheduling-containers-and-more-with-nomad/nomad-cover.jpg
 cover: /img/2016-02-03-scheduling-containers-and-more-with-nomad/nomad-cover.jpg
 categories:
   - article

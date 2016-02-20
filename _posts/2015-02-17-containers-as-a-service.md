@@ -1,7 +1,7 @@
 ---
 author: Bas Tichelaar
 tags: docker
-cover: /img/2015-02-17-containers-as-a-service/containers-cover.jpg
+preview: /img/2015-02-17-containers-as-a-service/containers-cover.jpg
 difficulty: basic
 externalurl: http://tichelaar.io/containers-as-a-service
 ---

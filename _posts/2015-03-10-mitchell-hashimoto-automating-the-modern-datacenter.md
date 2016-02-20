@@ -2,7 +2,7 @@
 title: "Automating the Modern Datacenter"
 author: Nauts
 tags: docker
-cover: /img/2015-03-10-mitchell-hashimoto-automating-the-modern-datacenter/mitchell-cover.png
+preview: /img/2015-03-10-mitchell-hashimoto-automating-the-modern-datacenter/mitchell-cover.png
 difficulty: basic
 externalurl: https://www.youtube.com/watch?v=Yw_NoD9NDyk
 youtube: https://www.youtube.com/embed/Yw_NoD9NDyk

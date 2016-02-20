@@ -4,6 +4,7 @@ title: "Nomad Open Kitchen"
 author: Erik Veld
 date: 2016-02-13
 cover: /img/2016-02-08-nomad-openkitchen/nomad.png
+preview: /img/2016-02-08-nomad-openkitchen/nomad.png
 categories:
   - article
 comments: true

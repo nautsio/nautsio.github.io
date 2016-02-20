@@ -2,7 +2,7 @@
 title: "Towards Docker in production with Apache Mesos"
 author: Ivo Verberk
 tags: docker mesos
-cover: /img/2015-05-04-towards-docker-in-production-with-apache-mesos/mesos-cover.png
+preview: /img/2015-05-04-towards-docker-in-production-with-apache-mesos/mesos-cover.png
 difficulty: advanced
 externalurl: http://www.ivoverberk.nl/towards-docker-in-production-with-apache-mesos/
 ---
