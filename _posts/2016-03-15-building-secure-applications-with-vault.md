@@ -16,9 +16,9 @@ tags:
   - training
   - xebia
 ---
-Storing and granting access to sensitive information and secrets is a difficult problem to solve, and it's easy to accidentally introduce security issues along the way. Every organization has to store secrets or other sensitive information and have it be accessible to individuals or systems. These secrets can be database credentials, cloud provider credentials, API keys, etc.
+How to store and grant access to secret or sensitive information is a difficult problem to solve. It’s often too easy to accidentally introduce security issues along the way. Every organization needs to store private or sensitive information, such as database credentials, cloud provider credentials, API keys, etcetera while keeping it accessible to some individuals or systems.
 
-How do you share them without them being open to attack? And if something does occur, how can you see what information was requested by whom and revoke the affected keys. One of the products that tries to provide answers to these question is HashiCorp's [Vault](https://www.vaultproject.io/).
+How do you share this information without opening it up to attack? And if a security breach does occur, how can you see what information was requested by whom and revoke the affected keys? One product that provides answers to these questions and solves these security issues is HashiCorp's [Vault](https://www.vaultproject.io/).
 
 Vault secures, stores, and tightly controls access to tokens, passwords, certificates, API keys, and other secrets in modern computing. Vault handles leasing, key revocation, key rolling, and auditing.
 
@@ -26,7 +26,7 @@ Vault secures, stores, and tightly controls access to tokens, passwords, certifi
 
 > Secure your applications and infrastructure to limit the surface area and attack time in the event of a breach.
 
-What better way to learn how to manage your secrets and how to build secure applications with Vault than from the source? On the 31st of March HashiCorp's [Seth Vargo](https://twitter.com/sethvargo) will be giving an [engineer-led course](https://ti.to/hashicorp/training-amsterdam-building-secure-applications-with-vault) in Amsterdam, aimed at both Vault administrators operationalizing vault and developers writing applications that utilize Vault secrets.
+What better way to learn how to manage your secrets and build secure applications with Vault than from the source? On March 31, March HashiCorp's [Seth Vargo](https://twitter.com/sethvargo) will facilitate an [engineer-led course](https://ti.to/hashicorp/training-amsterdam-building-secure-applications-with-vault) in Amsterdam for both Vault administrators and developers. Learn how to operationalize vault and write applications that utilize its secrets.
 
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <div style="overflow:hidden;height:500px;width:960px;"><div id="gmap_canvas" style="height:500px;width:960px;">
@@ -56,4 +56,4 @@ The second part of the course covers techniques for **integrating Vault secrets 
 - Using [Consul Template](https://github.com/hashicorp/consul-template) and [Envconsul](https://github.com/hashicorp/envconsul)
 - Communicating directly with Vault in your application
 
-After this training you will be able to set up Vault, store your secrets and sensitive information, and create applications that make use of Vault to store its secrets.
+After this training, you will be able to set up Vault, store your secrets and sensitive information, and create applications that use Vault to store secrets. 
