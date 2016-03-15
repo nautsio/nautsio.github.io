@@ -2,9 +2,9 @@
 layout: post
 title: "Building secure applications with Vault"
 author: Erik Veld
-date: 2016-03-13 10:00
-cover: /img/2016-03-14-building-secure-applications-with-vault/cover.jpg
-preview: /img/2016-03-14-building-secure-applications-with-vault/cover.jpg
+date: 2016-03-15 10:00
+cover: /img/2016-03-15-building-secure-applications-with-vault/cover.jpg
+preview: /img/2016-03-15-building-secure-applications-with-vault/cover.jpg
 categories:
   - article
 comments: true
@@ -22,7 +22,7 @@ How do you share them without them being open to attack? And if something does o
 
 Vault secures, stores, and tightly controls access to tokens, passwords, certificates, API keys, and other secrets in modern computing. Vault handles leasing, key revocation, key rolling, and auditing.
 
-![Vault](/img/2016-03-14-building-secure-applications-with-vault/vault.png)
+![Vault](/img/2016-03-15-building-secure-applications-with-vault/vault.png)
 
 > Secure your applications and infrastructure to limit the surface area and attack time in the event of a breach.
 
