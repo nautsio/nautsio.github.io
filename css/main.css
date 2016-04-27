@@ -26,6 +26,8 @@ html, body {
 
 #background.frontpage {
   height: 100vh;
+  background-image: url(/img/hashiconf.jpg);
+  background-position: top left;
 }
 
 #background.post {
