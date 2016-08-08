@@ -3,6 +3,8 @@ layout: post
 title: "Docker Swarm on Kubernetes"
 author: Erik Veld
 date: 2016-02-09 12:15
+cover: /img/nauts-bg.png
+preview: /img/nauts-bg.png
 categories:
   - videos
 comments: true

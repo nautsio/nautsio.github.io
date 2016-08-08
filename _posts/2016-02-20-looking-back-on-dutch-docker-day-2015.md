@@ -3,8 +3,8 @@ layout: post
 title: "Looking back on Dutch Docker Day 2015"
 author: Rik Farenhorst
 date: 2016-02-20 08:41
-cover: /img/ddd-cover.png
-preview: /img/ddd-cover.png
+cover: /img/nauts-bg.png
+preview: /img/nauts-bg.png
 categories:
   - article
 comments: true
