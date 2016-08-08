@@ -3,8 +3,8 @@ layout: post
 title: "Mesos in a moment"
 author: Erik Veld
 date: 2016-02-09 14:15
-cover: /img/nauts-bg.png
-preview: /img/nauts-bg.png
+cover: /img/container.jpg
+preview: /img/container.jpg
 categories:
   - videos
 comments: true

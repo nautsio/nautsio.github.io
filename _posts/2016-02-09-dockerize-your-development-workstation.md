@@ -3,8 +3,8 @@ layout: post
 title: "Dockerize your Development Workstation"
 author: Erik Veld
 date: 2016-02-09 11:45
-cover: /img/nauts-bg.png
-preview: /img/nauts-bg.png
+cover: /img/container.jpg
+preview: /img/container.jpg
 categories:
   - videos
 comments: true
