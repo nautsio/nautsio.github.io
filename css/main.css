@@ -26,7 +26,7 @@ html, body {
 
 #background.frontpage {
   height: 100vh;
-  background-image: url(/img/hashiconf.jpg);
+  background-image: url(/img/nauts-bg.png);
   background-position: top left;
 }
 
